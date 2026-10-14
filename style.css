@@ -335,14 +335,13 @@ span {
     box-shadow: 0 0 15px rgba(255,255,255,.7);
 }
 .loi-moi {
-    width: 80%;
-    height: auto;
+    width: 65%;
     margin: 10px auto;
     margin-top: 49px;
-    padding: 35px 20px 35px;
+    padding: 35px 20px;
     text-align: center;
-    background-image:url(./bst.jpg);
-    background-size: cover;
+    background-image:url(../img/bst.jpg);
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid #ffb700;
@@ -350,7 +349,7 @@ span {
     box-sizing: border-box;
 }
 .loi-moi p {
-    margin: 20px 0 20px;
+    margin: 20px 0;
     color: #f8e7b0;
     background-color: #5A0012;
     padding: 10px 20px ;
@@ -1097,9 +1096,7 @@ span {
     color: #5A0012;
     background: #ffd700;
 }
-/* RESPONSIVE BRENNА */
 
-/* MÁY TÍNH BẢNG */
 @media (max-width: 1024px) {
     nav {
         gap: 15px 25px;
@@ -1169,7 +1166,6 @@ span {
         white-space: normal;
     }
 
-    /* DANH MỤC 5 Ô */
     .cac-muc {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1214,7 +1210,6 @@ span {
         padding: 9px 4px;
     }
 
-    /* CHỮ TRÊN ẢNH */
     .chu-tren-anh {
         width: 85%;
         left: 5%;
@@ -1303,7 +1298,6 @@ span {
         border-bottom: 1px solid #80531f;
     }
 
-    /* BỘ SƯU TẬP */
     .bo-suu-tap {
         width: 92%;
     }
@@ -1350,7 +1344,8 @@ span {
         width: 92%;
         flex-direction: column;
         gap: 15px
-
+    }
+}
 
 
 
