@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="Logo Brenna" />
+        <div class="ten">
+          <h1>Br<span>enna</span></h1>
+          <p><small>Flowers Accessories</small></p>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+        <div class="thads">
+          <a href="./sanpham.html" class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>Sản Phẩm ▾</a>
+          <ul class="dscon">
+            <li><a href="./sanpham.html#bosuutap-hoa">Bộ sưu tập hoa</a></li>
+            <li><a href="./sanpham.html#hoatuooi">Hoa Tươi</a></li>
+          </ul>
+        </div>
+        <div class="thads">
+          <a href="./vechungtoi.html">Về chúng tôi ▾</a>
+          <ul class="dscon">
+            <li><a href="./vechungtoi.html">Câu chuyện Brenna</a></li>
+            <li><a href="./vechungtoi.html#hoatuoi">Câu chuyện Hoa tươi</a></li>
+            <li><a href="./vechungtoi.html#quanho">Câu chuyện Quà nhỏ</a></li>
+            <li><a href="./vechungtoi.html#phukien">Câu chuyện Phụ Kiện</a></li>
+          </ul>
+        </div>
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+</div>
+<main>
+<section class="chi-tiet-san-pham">
+
+    <div class="khu-vuc-hinh">
+
+        <div class="anh-nho">
+
+            <img
+                src="../img/nt1.jpg"
+                class="anh-dang-chon"
+
+                data-ten="Nến thơm hoa hồng"
+                data-gia="250.000đ"
+                data-gia-cu="300.000đ"
+                data-giam="Giảm 17%"
+
+                data-mo-ta="Nến thơm hoa hồng với hương thơm dịu dàng, ngọt ngào, mang đến cảm giác thư giãn và dễ chịu."
+
+                onclick="doiAnh(this)"
+            >
+
+
+            <img
+                src="../img/nt2.jpg"
+
+                data-ten="Nến thơm vani"
+                data-gia="280.000đ"
+                data-gia-cu="330.000đ"
+                data-giam="Giảm 15%"
+
+                data-mo-ta="Nến thơm hương vani ngọt ngào và ấm áp, thích hợp để thư giãn sau một ngày dài."
+
+                onclick="doiAnh(this)"
+            >
+
+
+            <!-- NẾN THƠM 3 -->
+            <img
+                src="../img/nt3.jpg"
+
+                data-ten="Nến thơm lavender"
+                data-gia="270.000đ"
+                data-gia-cu="320.000đ"
+                data-giam="Giảm 16%"
+
+                data-mo-ta="Nến thơm lavender mang hương thơm nhẹ nhàng, thanh mát, giúp không gian trở nên thư thái và dễ chịu."
+
+                onclick="doiAnh(this)"
+            >
+
+
+            <!-- NẾN THƠM 4 -->
+            <img
+                src="../img/nt4.jpg"
+
+                data-ten="Nến thơm trái cây"
+                data-gia="260.000đ"
+                data-gia-cu="310.000đ"
+                data-giam="Giảm 16%"
+
+                data-mo-ta="Nến thơm hương trái cây tươi mát, mang đến cảm giác trẻ trung, vui vẻ và tràn đầy năng lượng."
+
+                onclick="doiAnh(this)"
+            >
+
+        </div>
+
+
+        <div class="anh-lon">
+
+            <img
+                id="anh-chinh"
+                src="../img/nt1.jpg"
+                alt="Nến thơm"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="thong-tin-san-pham">
+
+        <span class="nhan-san-pham">
+            Nến thơm
+        </span>
+
+
+        <h1 id="ten-san-pham">
+            Nến thơm hoa hồng
+        </h1>
+
+
+        <div class="gia-san-pham">
+
+            <strong id="gia-san-pham">
+                250.000đ
+            </strong>
+
+            <del id="gia-cu">
+                300.000đ
+            </del>
+
+            <span id="giam-gia">
+                Giảm 17%
+            </span>
+
+        </div>
+
+
+        <p class="mo-ta-ngan" id="mo-ta-ngan">
+
+            Nến thơm hoa hồng với hương thơm
+            dịu dàng, ngọt ngào, mang đến cảm giác
+            thư giãn và dễ chịu.
+
+        </p>
+        <div class="chon-so-luong">
+            <label for="so-luong">Số lượng:</label>
+            <input
+                type="number"
+                id="so-luong"
+                min="1"
+                value="1"
+            >
+        </div>
+
+        <div class="nut-mua-hang">
+            <button type="button" onclick="themVaoGio()">
+                ♡ Thêm vào giỏ hàng
+            </button>
+
+            <a href="./lienhe.html">
+                🛒 Xem giỏ hàng
+            </a>
+        </div>
+
+
+        <div class="thong-tin-giao-hang">
+
+            <div>
+                <b>♧　Hương thơm dễ chịu</b>
+                <small>
+                    Hương thơm nhẹ nhàng, thư giãn
+                </small>
+            </div>
+
+
+            <div>
+                <b>▣　Giao hàng nhanh</b>
+                <small>
+                    Giao trong 2 giờ tại nội thành
+                </small>
+            </div>
+
+
+            <div>
+                <b>▤　Thanh toán linh hoạt</b>
+                <small>
+                    COD, chuyển khoản, ví điện tử
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="chia-se">
+            Chia sẻ　　ⓕ　◉　♪　🔗
+        </div>
+
+    </div>
+
+</section>
+
+<section class="khu-vuc-mo-ta">
+
+    <div class="mo-ta-san-pham">
+
+        <h2>
+            Mô tả sản phẩm
+        </h2>
+
+
+        <p>
+
+            Nến thơm là món phụ kiện nhỏ xinh giúp
+            tạo nên không gian ấm áp và thư giãn.
+            Với nhiều mùi hương nhẹ nhàng như hoa hồng,
+            vani, lavender và trái cây, nến thơm phù hợp
+            để sử dụng khi nghỉ ngơi, đọc sách hoặc
+            trang trí không gian sống.
+
+        </p>
+
+
+        <h3>
+            ✿　“Một ngọn nến – Một khoảng bình yên”
+        </h3>
+
+    </div>
+
+
+
+    <div class="y-nghia">
+
+        <h2>
+            Ý nghĩa
+        </h2>
+
+
+        <p>
+            ♡　 Sự thư giãn và bình yên
+        </p>
+
+        <p>
+            ♧　 Không gian ấm áp và dễ chịu
+        </p>
+
+        <p>
+            ☆　 Món quà nhỏ đầy tinh tế
+        </p>
+
+
+        <h2>
+            Lưu ý
+        </h2>
+
+
+        <ul>
+
+            <li>
+                Đặt nến trên bề mặt phẳng và chắc chắn
+                khi sử dụng.
+            </li>
+
+            <li>
+                Không để nến gần vật dễ cháy và không
+                để nến đang cháy mà không có người trông coi.
+            </li>
+
+            <li>
+                Hỗ trợ ghi thiệp miễn phí theo yêu cầu.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="san-pham-lien-quan">
+
+    <div class="tieu-de-lien-quan">
+
+        <h2>
+            ✿　Sản phẩm liên quan
+        </h2>
+
+        <a href="./sanpham.html#sanpham">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+
+    <div class="danh-sach-san-pham" id="sanpham">     
+
+        <div class="san-pham hoa">   
+
+            <a href="./nuochoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/nh1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Nước hoa
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham hoa">   
+
+            <a href="./gaubong.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/gb1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Gấu bông
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./kep.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/k1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Kẹp tóc
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./mockhoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/mk1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Móc khóa
+                </div>   
+
+            </a>
+
+        </div>
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./vongtay.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/v1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Vòng tay
+                </div>   
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+<footer class="chan-trang">
+  <div class="logo-cuoi">✿ Brenna <small>Flowers & Accessories</small></div>
+    Trang chủ　 |　 Sản phẩm　 |　 Về chúng tôi |　 Liên hệ</div>
+    <small> Nhận thông tin khuyến mãi và bộ sưu tập mới nhất! </small>
+    <br/>ⓕ facebook　◎　♪ tiktok 
+  </div>
+</footer> 
+<script src="../java/scrip.js"></script>
+</body>
+</html>
