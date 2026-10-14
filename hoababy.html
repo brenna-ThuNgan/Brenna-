@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="Logo Brenna">
+        <div class="ten">
+            <h1>Br<span>enna</span></h1>
+            <p><small>Flowers Accessories</small></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+
+        <div class="thads">
+            <a href="./sanpham.html" class="active">
+                <div class="thanh-ngang">
+                    <span class="traitim">♥</span>
+                </div>
+                Sản Phẩm ▾
+            </a>
+            <ul class="dscon">
+                <li><a href="./sanpham.html#bosuutap-hoa">Bộ sưu tập hoa</a></li>
+                <li><a href="./sanpham.html#hoatuooi">Hoa Tươi</a></li>
+            </ul>
+        </div>
+
+        <div class="thads">
+            <a href="./vechungtoi.html">Về chúng tôi ▾</a>
+            <ul class="dscon">
+                <li><a href="./vechungtoi.html">Câu chuyện Brenna</a></li>
+                <li><a href="./vechungtoi.html#hoatuoi">Câu chuyện Hoa tươi</a></li>
+                <li><a href="./vechungtoi.html#quanho">Câu chuyện Quà nhỏ</a></li>
+                <li><a href="./vechungtoi.html#phukien">Câu chuyện Phụ Kiện</a></li>
+            </ul>
+        </div>
+
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+</div>
+<main>
+    <section class="chi-tiet-san-pham">
+        <div class="khu-vuc-hinh">
+            <div class="anh-nho">
+                <img
+                    src="../img/bb1.jpg"
+                    class="anh-dang-chon"
+                    alt="Bó hoa baby trắng"
+                    data-ten="Bó hoa baby trắng"
+                    data-gia="350.000đ"
+                    data-gia-cu="420.000đ"
+                    data-giam="Giảm 17%"
+                    data-mo-ta="Bó hoa baby trắng nhỏ xinh với những bông hoa li ti, mang đến vẻ đẹp nhẹ nhàng, tinh khôi và trong trẻo."
+                    data-mo-ta-dai="Hoa baby trắng nổi bật với những bông hoa nhỏ li ti kết thành từng chùm mềm mại. Sắc trắng tinh khôi cùng vẻ đẹp nhẹ nhàng tạo nên một bó hoa thanh lịch, đáng yêu và phù hợp để dành tặng người mình yêu thương."
+                    data-y-nghia="Sự tinh khiết, chân thành và tình yêu trong sáng"
+                    onclick="doiAnh(this)"
+                >
+                <img
+                    src="../img/bb2.jpg"
+                    alt="Bó hoa baby hồng"
+                    data-ten="Bó hoa baby hồng"
+                    data-gia="380.000đ"
+                    data-gia-cu="450.000đ"
+                    data-giam="Giảm 16%"
+                    data-mo-ta="Bó hoa baby hồng mang sắc hồng dịu dàng, ngọt ngào và đáng yêu."
+                    data-mo-ta-dai="Hoa baby hồng gây ấn tượng bởi sắc hồng nhẹ nhàng cùng những bông hoa nhỏ xinh. Màu hoa ngọt ngào mang đến cảm giác trẻ trung, lãng mạn và phù hợp để gửi gắm những tình cảm chân thành."
+                    data-y-nghia="Tình yêu dịu dàng, sự yêu thương và ngọt ngào"
+                    onclick="doiAnh(this)"
+                >
+                <img
+                    src="../img/bb3.jpg"
+                    alt="Bó hoa baby tím"
+                    data-ten="Bó hoa baby tím"
+                    data-gia="390.000đ"
+                    data-gia-cu="460.000đ"
+                    data-giam="Giảm 15%"
+                    data-mo-ta="Bó hoa baby tím mang vẻ đẹp lãng mạn, nhẹ nhàng và đầy cuốn hút."
+                    data-mo-ta-dai="Hoa baby tím với những chùm hoa nhỏ li ti tạo nên vẻ đẹp mềm mại và lãng mạn. Sắc tím nhẹ nhàng giúp bó hoa trở nên nổi bật nhưng vẫn giữ được nét tinh tế và dịu dàng."
+                    data-y-nghia="Sự thủy chung, lãng mạn và tình cảm sâu sắc"
+                    onclick="doiAnh(this)"
+                >
+            </div>
+            <div class="anh-lon">
+                <img
+                    id="anh-chinh"
+                    src="../img/bb1.jpg"
+                    alt="Bó hoa baby trắng"
+                >
+            </div>
+        </div>
+        <div class="thong-tin-san-pham">
+            <span class="nhan-san-pham">Bó hoa tươi</span>
+            <h1 id="ten-san-pham">Bó hoa baby trắng</h1>
+            <div class="gia-san-pham">
+                <strong id="gia-san-pham">350.000đ</strong>
+                <del id="gia-cu">420.000đ</del>
+                <span id="giam-gia">Giảm 17%</span>
+            </div>
+            <p class="mo-ta-ngan" id="mo-ta-ngan">
+                Bó hoa baby trắng nhỏ xinh với những bông hoa li ti,
+                mang đến vẻ đẹp nhẹ nhàng, tinh khôi và trong trẻo.
+            </p>
+            <div class="chon-so-luong">
+                <label for="so-luong">Số lượng:</label>
+                <input type="number" id="so-luong" min="1" value="1">
+            </div>
+            <div class="nut-mua-hang">
+                <button type="button" onclick="themVaoGio()">
+                    ♡ Thêm vào giỏ hàng
+                </button>
+                <a href="./lienhe.html">🛒 Xem giỏ hàng</a>
+            </div>
+            <div class="thong-tin-giao-hang">
+                <div>
+                    <b>♧　Hoa tươi 100%</b>
+                    <small>Cam kết hoa tươi trong 3–5 ngày</small>
+                </div>
+                <div>
+                    <b>▣　Giao hàng nhanh</b>
+                    <small>Giao trong 2 giờ tại nội thành</small>
+                </div>
+                <div>
+                    <b>▤　Thanh toán linh hoạt</b>
+                    <small>COD, chuyển khoản, ví điện tử</small>
+                </div>
+            </div>
+            <div class="chia-se">
+                Chia sẻ　　ⓕ　◉　♪　🔗
+            </div>
+        </div>
+    </section>
+    <section class="khu-vuc-mo-ta">
+        <div class="mo-ta-san-pham">
+            <h2>Mô tả sản phẩm</h2>
+            <p id="mo-ta-dai">
+                Hoa baby trắng nổi bật với những bông hoa nhỏ li ti kết thành từng chùm mềm mại. Sắc trắng tinh khôi cùng vẻ đẹp nhẹ nhàng tạo nên một bó hoa thanh lịch, đáng yêu và phù hợp để dành tặng người mình yêu thương.
+            </p>
+            <h3>✿　“Một bó hoa – Ngàn lời yêu thương”</h3>
+        </div>
+        <div class="y-nghia">
+            <h2>Ý nghĩa</h2>
+            <p id="y-nghia">
+                ♡ Sự tinh khiết, chân thành và tình yêu trong sáng.
+            </p>
+            <h2>Lưu ý</h2>
+            <ul>
+                <li>Hoa có thể thay đổi nhẹ tùy theo mùa và tình trạng hoa.</li>
+                <li>Nên đặt trước 3–4 giờ để đảm bảo chất lượng.</li>
+                <li>Hỗ trợ ghi thiệp miễn phí theo yêu cầu.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="san-pham-lien-quan">
+        <div class="tieu-de-lien-quan">
+            <h2>✿　Sản phẩm liên quan</h2>
+            <a href="./sanpham.html#sanpham">Xem tất cả →</a>
+        </div>
+        <div class="danh-sach-san-pham" id="sanpham">
+            <div class="san-pham hoa">
+                <a href="./tulip.html">
+                    <div class="o-san-pham">
+                        <img src="../img/tl1.jpg" alt="Hoa tulip">
+                    </div>
+                    <div class="ten-san-pham">Hoa tulip</div>
+                </a>
+            </div>
+            <div class="san-pham hoa">
+                <a href="./maudon.html">
+                    <div class="o-san-pham">
+                        <img src="../img/md1.jpg" alt="Hoa mẫu đơn">
+                    </div>
+                    <div class="ten-san-pham">Hoa mẫu đơn</div>
+                </a>
+            </div>
+            <div class="san-pham hoa">
+                <a href="./tucau.html">
+                    <div class="o-san-pham">
+                        <img src="../img/tc1.jpg" alt="Hoa tú cầu">
+                    </div>
+                    <div class="ten-san-pham">Hoa tú cầu</div>
+                </a>
+            </div>
+            <div class="san-pham hoa">
+                <a href="./huongduong.html">
+                    <div class="o-san-pham">
+                        <img src="../img/hd1.jpg" alt="Hoa hướng dương">
+                    </div>
+                    <div class="ten-san-pham">Hoa hướng dương</div>
+                </a>
+            </div>
+            <div class="san-pham hoa">
+                <a href="./hoaly.html">
+                    <div class="o-san-pham">
+                        <img src="../img/hl1.jpg" alt="Hoa ly">
+                    </div>
+                    <div class="ten-san-pham">Hoa ly</div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+<footer class="chan-trang">
+  <div class="logo-cuoi">✿ Brenna <small>Flowers & Accessories</small></div>
+    Trang chủ　 |　 Sản phẩm　 |　 Về chúng tôi |　 Liên hệ</div>
+    <small> Nhận thông tin khuyến mãi và bộ sưu tập mới nhất! </small>
+    <br/>ⓕ facebook　◎　♪ tiktok 
+  </div>
+</footer> 
+<script src="../java/scrip.js"></script>
+</body>
+</html>

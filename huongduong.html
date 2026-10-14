@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="Logo Brenna" />
+        <div class="ten">
+          <h1>Br<span>enna</span></h1>
+          <p><small>Flowers Accessories</small></p>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+        <div class="thads">
+          <a href="./sanpham.html" class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>Sản Phẩm ▾</a>
+          <ul class="dscon">
+            <li><a href="./sanpham.html#bosuutap-hoa">Bộ sưu tập hoa</a></li>
+            <li><a href="./sanpham.html#hoatuooi">Hoa Tươi</a></li>
+          </ul>
+        </div>
+        <div class="thads">
+          <a href="./vechungtoi.html">Về chúng tôi ▾</a>
+          <ul class="dscon">
+            <li><a href="./vechungtoi.html">Câu chuyện Brenna</a></li>
+            <li><a href="./vechungtoi.html#hoatuoi">Câu chuyện Hoa tươi</a></li>
+            <li><a href="./vechungtoi.html#quanho">Câu chuyện Quà nhỏ</a></li>
+            <li><a href="./vechungtoi.html#phukien">Câu chuyện Phụ Kiện</a></li>
+          </ul>
+        </div>
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+</div> 
+<main>
+<section class="chi-tiet-san-pham">
+
+    <div class="khu-vuc-hinh">
+
+        <div class="anh-nho">
+
+            <img
+                src="../img/hd1.jpg"
+                class="anh-dang-chon"
+                data-ten="Bó hoa hướng dương"
+                data-gia="420.000đ"
+                data-gia-cu="480.000đ"
+                data-giam="Giảm 13%"
+                data-mo-ta="Bó hoa hướng dương rực rỡ với sắc vàng tươi sáng, mang đến cảm giác vui vẻ, ấm áp và tràn đầy năng lượng."
+                data-mo-ta-dai="Hoa hướng dương nổi bật với sắc vàng rực rỡ và dáng hoa tươi sáng. Những bông hoa được sắp xếp hài hòa, tạo nên một bó hoa tràn đầy sức sống, thích hợp để trang trí hoặc dành tặng người thân, bạn bè."
+                data-y-nghia="Niềm vui, hy vọng và sự lạc quan"
+                onclick="doiAnh(this)"
+            >
+
+            <img
+                src="../img/hd2.jpg"
+                data-ten="Bó hoa hướng dương mix"
+                data-gia="480.000đ"
+                data-gia-cu="550.000đ"
+                data-giam="Giảm 13%"
+                data-mo-ta="Bó hướng dương mix kết hợp hoa hướng dương cùng những loài hoa nhỏ, tạo nên vẻ đẹp trẻ trung và nổi bật."
+                data-mo-ta-dai="Bó hoa hướng dương mix được kết hợp cùng những loài hoa và phụ kiện trang trí nhẹ nhàng. Sắc vàng nổi bật hòa cùng màu sắc của các loại hoa khác tạo nên tổng thể hài hòa, trẻ trung và đầy sức sống."
+                data-y-nghia="Tình bạn, niềm vui và những lời chúc tốt đẹp"
+                onclick="doiAnh(this)"
+            >
+
+        </div>
+
+
+        <div class="anh-lon">
+            <img
+                id="anh-chinh"
+                src="../img/hd1.jpg"
+            >
+        </div>
+
+    </div>
+
+
+    <div class="thong-tin-san-pham">
+
+        <span class="nhan-san-pham">
+            Bó hoa tươi
+        </span>
+
+        <h1 id="ten-san-pham">
+            Bó hoa hướng dương
+        </h1>
+
+        <div class="gia-san-pham">
+
+            <strong id="gia-san-pham">
+                420.000đ
+            </strong>
+
+            <del id="gia-cu">
+                480.000đ
+            </del>
+
+            <span id="giam-gia">
+                Giảm 13%
+            </span>
+
+        </div>
+
+        <p class="mo-ta-ngan" id="mo-ta-ngan">
+            Bó hoa hướng dương rực rỡ với sắc vàng tươi sáng,
+            mang đến cảm giác vui vẻ, ấm áp và tràn đầy năng lượng.
+        </p>
+        <div class="chon-so-luong">
+            <label for="so-luong">Số lượng:</label>
+            <input
+                type="number"
+                id="so-luong"
+                min="1"
+                value="1"
+            >
+        </div>
+
+        <div class="nut-mua-hang">
+            <button type="button" onclick="themVaoGio()">
+                ♡ Thêm vào giỏ hàng
+            </button>
+
+            <a href="./lienhe.html">
+                🛒 Xem giỏ hàng
+            </a>
+        </div>
+
+
+        <div class="thong-tin-giao-hang">
+
+            <div>
+                <b>♧　Hoa tươi 100%</b>
+                <small>Cam kết hoa tươi trong 3–5 ngày</small>
+            </div>
+
+            <div>
+                <b>▣　Giao hàng nhanh</b>
+                <small>Giao trong 2 giờ tại nội thành</small>
+            </div>
+
+            <div>
+                <b>▤　Thanh toán linh hoạt</b>
+                <small>COD, chuyển khoản, ví điện tử</small>
+            </div>
+
+        </div>
+
+
+        <div class="chia-se">
+            Chia sẻ　　ⓕ　◉　♪　🔗
+        </div>
+
+    </div>
+
+</section>
+
+<section class="khu-vuc-mo-ta">
+
+    <div class="mo-ta-san-pham">
+
+        <h2>Mô tả sản phẩm</h2>
+
+        <p id="mo-ta-dai">
+            Hoa hướng dương nổi bật với sắc vàng rực rỡ
+            và dáng hoa tươi sáng. Những bông hoa được
+            sắp xếp hài hòa, tạo nên một bó hoa tràn đầy
+            sức sống, thích hợp để trang trí hoặc dành tặng
+            người thân, bạn bè.
+        </p>
+
+        <h3>
+            ✿　“Một bó hoa – Ngàn lời yêu thương”
+        </h3>
+
+    </div>
+
+
+    <div class="y-nghia">
+
+        <h2>Ý nghĩa</h2>
+
+        <p>
+            ♡ Niềm vui, hy vọng và sự lạc quan
+        </p>
+
+
+        <h2>Lưu ý</h2>
+
+        <ul>
+
+            <li>
+                Hoa có thể thay đổi nhẹ tùy theo mùa
+                và tình trạng hoa.
+            </li>
+
+            <li>
+                Nên đặt trước 3–4 giờ để đảm bảo chất lượng.
+            </li>
+
+            <li>
+                Hỗ trợ ghi thiệp miễn phí theo yêu cầu.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="san-pham-lien-quan">
+
+    <div class="tieu-de-lien-quan">
+
+        <h2>
+            ✿　Sản phẩm liên quan
+        </h2>
+
+        <a href="./sanpham.html#sanpham">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="danh-sach-san-pham" id="sanpham">   
+        
+    <div class="san-pham hoa">      
+        <a href="./tulip.html">
+            <div class="o-san-pham">
+                <img src="../img/tl1.jpg">
+            </div>   
+            <div class="ten-san-pham">Hoa tulip</div> 
+        </a>  
+    </div>   
+
+    <div class="san-pham hoa">   
+        <a href="./maudon.html">
+            <div class="o-san-pham">   
+                <img src="../img/md1.jpg">
+            </div>   
+            <div class="ten-san-pham">Hoa mẫu đơn</div>   
+        </a>
+    </div>   
+
+    <div class="san-pham hoa">   
+        <a href="./tucau.html">
+            <div class="o-san-pham">   
+                <img src="../img/tc1.jpg">
+            </div>   
+            <div class="ten-san-pham">Hoa tú cầu</div>   
+        </a>
+    </div>   
+
+    <div class="san-pham hoa">   
+        <a href="./huongduong.html">
+            <div class="o-san-pham">   
+                <img src="../img/hd1.jpg">
+            </div>   
+            <div class="ten-san-pham">Hoa hướng dương</div>   
+        </a>
+    </div>   
+
+    <div class="san-pham hoa">   
+        <a href="./hoababy.html">
+            <div class="o-san-pham">   
+                <img src="../img/bb1.jpg">
+            </div>   
+            <div class="ten-san-pham">Hoa baby</div>   
+        </a>
+    </div>   
+</div>
+
+</section>
+
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+<footer class="chan-trang">
+  <div class="logo-cuoi">✿ Brenna <small>Flowers & Accessories</small></div>
+    Trang chủ　 |　 Sản phẩm　 |　 Về chúng tôi |　 Liên hệ</div>
+    <small> Nhận thông tin khuyến mãi và bộ sưu tập mới nhất! </small>
+    <br/>ⓕ facebook　◎　♪ tiktok 
+  </div>
+</footer> 
+ <script src="../java/scrip.js"></script>
+</body>
+</html>
