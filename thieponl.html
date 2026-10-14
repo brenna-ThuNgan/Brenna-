@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="Logo Brenna" />
+        <div class="ten">
+          <h1>Br<span>enna</span></h1>
+          <p><small>Flowers Accessories</small></p>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+        <div class="thads">
+          <a href="./sanpham.html" class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>Sản Phẩm ▾</a>
+          <ul class="dscon">
+            <li><a href="./sanpham.html#bosuutap-hoa">Bộ sưu tập hoa</a></li>
+            <li><a href="./sanpham.html#hoatuooi">Hoa Tươi</a></li>
+          </ul>
+        </div>
+        <div class="thads">
+          <a href="./vechungtoi.html">Về chúng tôi ▾</a>
+          <ul class="dscon">
+            <li><a href="./vechungtoi.html">Câu chuyện Brenna</a></li>
+            <li><a href="./vechungtoi.html#hoatuoi">Câu chuyện Hoa tươi</a></li>
+            <li><a href="./vechungtoi.html#quanho">Câu chuyện Quà nhỏ</a></li>
+            <li><a href="./vechungtoi.html#phukien">Câu chuyện Phụ Kiện</a></li>
+          </ul>
+        </div>
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+</div>
+<main>
+<section class="chi-tiet-san-pham">
+
+    <div class="khu-vuc-hinh">
+
+        <div class="anh-nho">
+
+            <img
+                src="../img/to1.png"
+
+                data-ten="Thiệp Online Sinh Nhật"
+                data-gia="45.000đ"
+                data-gia-cu="60.000đ"
+                data-giam="Giảm 25%"
+
+                data-mo-ta="Thiệp online sinh nhật với thiết kế đáng yêu, giúp gửi những lời chúc ngọt ngào đến người thân yêu trong ngày đặc biệt."
+
+                onclick="doiAnh(this)"
+            >
+
+            <img
+                src="../img/to2.png"
+
+                data-ten="Thiệp Online Tình Yêu"
+                data-gia="55.000đ"
+                data-gia-cu="75.000đ"
+                data-giam="Giảm 27%"
+
+                data-mo-ta="Thiệp online tình yêu mang thiết kế ngọt ngào, giúp gửi gắm những lời yêu thương đến người đặc biệt."
+
+                onclick="doiAnh(this)"
+            >
+
+        </div>
+
+        <div class="anh-lon">
+
+            <img
+                id="anh-chinh"
+                src="../img/to1.png"
+                alt="Thiệp Online"
+            >
+
+        </div>
+
+    </div>
+
+    <div class="thong-tin-san-pham">
+
+        <span class="nhan-san-pham">
+            Thiệp Online
+        </span>
+
+        <h1 id="ten-san-pham">
+            Thiệp Online Chúc Mừng
+        </h1>
+
+        <div class="gia-san-pham">
+
+            <strong id="gia-san-pham">
+                45.000đ
+            </strong>
+
+            <del id="gia-cu">
+                60.000đ
+            </del>
+
+            <span id="giam-gia">
+                Giảm 25%
+            </span>
+
+        </div>
+
+        <p class="mo-ta-ngan" id="mo-ta-ngan">
+
+            Thiệp online sinh nhật với thiết kế đáng yêu, giúp gửi những lời chúc ngọt ngào đến người thân yêu trong ngày đặc biệt.
+
+        </p>
+        <div class="chon-so-luong">
+            <label for="so-luong">Số lượng:</label>
+            <input
+                type="number"
+                id="so-luong"
+                min="1"
+                value="1"
+            >
+        </div>
+
+        <div class="nut-mua-hang">
+            <button type="button" onclick="themVaoGio()">
+                ♡ Thêm vào giỏ hàng
+            </button>
+
+            <a href="./lienhe.html">
+                🛒 Xem giỏ hàng
+            </a>
+        </div>
+
+        <div class="thong-tin-giao-hang">
+
+            <div>
+                <b>♧　Thiết kế tinh tế</b>
+                <small>
+                    Nhiều mẫu thiệp online xinh xắn, ý nghĩa
+                </small>
+            </div>
+
+            <div>
+                <b>▣　Gửi thiệp nhanh</b>
+                <small>
+                    Gửi thiệp online nhanh chóng và tiện lợi
+                </small>
+            </div>
+
+            <div>
+                <b>▤　Cá nhân hóa</b>
+                <small>
+                    Có thể thêm lời chúc theo yêu cầu
+                </small>
+            </div>
+
+        </div>
+
+        <div class="chia-se">
+            Chia sẻ　　ⓕ　◉　♪　🔗
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="khu-vuc-mo-ta">
+
+    <div class="mo-ta-san-pham">
+
+        <h2>
+            Mô tả sản phẩm
+        </h2>
+
+
+        <p>
+
+            Thiệp online là món quà nhỏ giúp gửi gắm
+            những lời chúc và tình cảm chân thành đến
+            người nhận. Với nhiều mẫu thiết kế như
+            chúc mừng, sinh nhật, tình yêu và cảm ơn,
+            thiệp online giúp bạn dễ dàng gửi những
+            lời yêu thương đến người đặc biệt.
+
+        </p>
+
+
+        <h3>
+            ✿　“Một tấm thiệp – Ngàn lời yêu thương”
+        </h3>
+
+    </div>
+
+
+
+    <div class="y-nghia">
+
+        <h2>
+            Ý nghĩa
+        </h2>
+
+
+        <p>
+            ♡　 Gửi gắm tình cảm và yêu thương
+        </p>
+
+        <p>
+            ♧　 Gửi những lời chúc ý nghĩa
+        </p>
+
+        <p>
+            ☆　 Món quà tinh thần nhỏ đầy tinh tế
+        </p>
+
+
+        <h2>
+            Lưu ý
+        </h2>
+
+
+        <ul>
+
+            <li>
+                Có thể lựa chọn mẫu thiệp phù hợp với từng dịp.
+            </li>
+
+            <li>
+                Có thể thêm lời chúc riêng theo yêu cầu.
+            </li>
+
+            <li>
+                Thiệp online có thể gửi trực tiếp đến người nhận.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<section class="san-pham-lien-quan">
+
+    <div class="tieu-de-lien-quan">
+
+        <h2>
+            ✿　Sản phẩm liên quan
+        </h2>
+
+        <a href="./sanpham.html#sanpham">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+
+    <div class="danh-sach-san-pham" id="sanpham">     
+
+        <div class="san-pham hoa">   
+
+            <a href="./nuochoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/nh1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Nước hoa
+                </div>   
+
+            </a>
+
+        </div>   
+
+
+        <div class="san-pham hoa">   
+
+            <a href="./gaubong.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/gb1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Gấu bông
+                </div>   
+
+            </a>
+
+        </div>   
+
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./nenthom.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/nt1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Nến thơm
+                </div>   
+
+            </a>
+
+        </div>   
+
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./kep.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/k1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Kẹp tóc
+                </div>   
+
+            </a>
+
+        </div>
+
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./mockhoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/mk1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Móc khóa
+                </div>   
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+<footer class="chan-trang">
+  <div class="logo-cuoi">✿ Brenna <small>Flowers & Accessories</small></div>
+    Trang chủ　 |　 Sản phẩm　 |　 Về chúng tôi |　 Liên hệ</div>
+    <small> Nhận thông tin khuyến mãi và bộ sưu tập mới nhất! </small>
+    <br/>ⓕ facebook　◎　♪ tiktok 
+  </div>
+</footer> 
+<script src="../java/scrip.js"></script>
+</body>
+</html>
