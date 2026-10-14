@@ -12,7 +12,7 @@ body {
     min-width: 0;
     background-color: #5A0012;
     background-image: url("./br1.png");
-    background-position: center 4475px;
+    background-position: center 0;
     background-size: 100% auto;
     overflow-x: hidden;
 }
@@ -27,7 +27,6 @@ header {
     background-position: center;
     background-size: 40% auto;
 }
-
 #logo {
     width: clamp(65px, 8vw, 250px);
     height: auto;
@@ -381,14 +380,14 @@ span {
     height: 42px;
 }
 .khung-san-pham {
-    width: 95%;
+    width: 90%;
     margin: 10px auto 5px;
     display: flex;
     align-items: flex-start;
     gap: 25px;
 }
 .thanh-ben {
-    width: 220px;
+    width: 300px;
     flex-shrink: 0;
     color: #f8e7b0;
     margin-top:50px;
@@ -401,6 +400,7 @@ span {
     border-radius: 9px;
     overflow: hidden;
     background: #4c0007;
+    padding: 20px 20px;
 }
 .danh-muc > span:last-child {
     text-align: right;
@@ -1346,6 +1346,7 @@ span {
         gap: 15px
     }
 }
+
 
 
 
