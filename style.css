@@ -1097,7 +1097,259 @@ span {
     color: #5A0012;
     background: #ffd700;
 }
+/* RESPONSIVE BRENNА */
 
+/* MÁY TÍNH BẢNG */
+@media (max-width: 1024px) {
+    nav {
+        gap: 15px 25px;
+        padding: 10px 15px;
+    }
+
+    .danh-sach-san-pham {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .san-pham-lien-quan .danh-sach-san-pham {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .chi-tiet-san-pham {
+        gap: 20px;
+    }
+
+    .anh-lon {
+        height: 400px;
+    }
+
+    .hinh {
+        height: 500px;
+    }
+
+    .cau-chuyen-brenna {
+        margin: 35px 15px;
+    }
+
+    .cau-chuyen-brenna p,
+    .noi-dung > p:not(.ten-tieng-anh),
+    .noi-dung blockquote {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 25px 10px;
+        gap: 8px;
+    }
+
+    #logo {
+        width: clamp(50px, 13vw, 85px);
+    }
+
+    .ten {
+        font-size: clamp(13px, 3.5vw, 22px);
+    }
+
+    nav {
+        min-height: 0;
+        gap: 8px 14px;
+        padding: 12px 6px;
+        justify-content: center;
+    }
+
+    nav a {
+        min-height: 28px;
+        font-size: clamp(11px, 2.8vw, 15px);
+        white-space: nowrap;
+    }
+
+    .dscon li a {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    /* DANH MỤC 5 Ô */
+    .cac-muc {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .muc-danh-muc {
+        min-width: 0;
+        padding: 8px 3px;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .muc-danh-muc span {
+        font-size: clamp(15px, 4vw, 23px);
+    }
+
+    .muc-danh-muc b {
+        font-size: clamp(10px, 2.6vw, 15px);
+        line-height: 1.4;
+    }
+
+    .muc-danh-muc p {
+        font-size: clamp(9px, 2.2vw, 13px);
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .danh-sach-san-pham,
+    .san-pham-lien-quan .danh-sach-san-pham {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .san-pham {
+        font-size: 16px;
+        border-width: 1px;
+    }
+
+    .ten-san-pham {
+        font-size: clamp(13px, 3.5vw, 18px);
+        padding: 9px 4px;
+    }
+
+    /* CHỮ TRÊN ẢNH */
+    .chu-tren-anh {
+        width: 85%;
+        left: 5%;
+    }
+
+    .chu-tren-anh span {
+        font-size: clamp(10px, 2.5vw, 15px);
+    }
+
+    .chu-tren-anh h1 {
+        font-size: clamp(13px, 3.5vw, 22px);
+        margin: 6px 0;
+    }
+
+    .chu-tren-anh button {
+        padding: 6px 10px;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+    .loi-moi {
+        width: 92%;
+        padding: 22px 12px;
+        margin-top: 30px;
+    }
+
+    .loi-moi p {
+        font-size: clamp(14px, 3.5vw, 19px);
+        padding: 10px;
+    }
+
+    .chi-tiet-san-pham {
+        width: 92%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .khu-vuc-hinh {
+        width: 100%;
+        flex: auto;
+        gap: 8px;
+    }
+
+    .anh-nho {
+        width: 60px;
+    }
+
+    .anh-nho img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .anh-lon {
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .thong-tin-san-pham {
+        width: 100%;
+    }
+
+    .thong-tin-san-pham h1 {
+        font-size: clamp(23px, 5vw, 30px);
+    }
+
+    .gia-san-pham {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .gia-san-pham strong {
+        font-size: clamp(20px, 4.5vw, 26px);
+    }
+
+    .khu-vuc-mo-ta {
+        width: 92%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .mo-ta-san-pham {
+        padding: 0 0 15px;
+        border-right: none;
+        border-bottom: 1px solid #80531f;
+    }
+
+    /* BỘ SƯU TẬP */
+    .bo-suu-tap {
+        width: 92%;
+    }
+
+    .danh-sach-bo-suu-tap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .o-bo-suu-tap {
+        height: clamp(230px, 55vw, 360px);
+    }
+
+    .noi-dung-bo-suu-tap {
+        padding: 15px 8px;
+    }
+
+    .noi-dung-bo-suu-tap h3 {
+        font-size: clamp(15px, 3.5vw, 20px);
+    }
+
+    .noi-dung-bo-suu-tap p {
+        font-size: clamp(11px, 2.5vw, 14px);
+    }
+
+    .tieu-de {
+        width: 92%;
+        margin-bottom: 35px;
+    }
+
+    .tieu-de h1 {
+        font-size: clamp(24px, 5vw, 34px);
+    }
+
+    .tieu-de p,
+    .ket-thuc p {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(13px, 3vw, 16px);
+    }
+
+    .cau-chuyen,
+    .cau-chuyen.doi {
+        width: 92%;
+        flex-direction: column;
+        gap: 15px
 
 
 
