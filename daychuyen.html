@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dau-trang">
+    <header>
+        <img id="logo" src="../img/logo.png" alt="Logo Brenna" />
+        <div class="ten">
+          <h1>Br<span>enna</span></h1>
+          <p><small>Flowers Accessories</small></p>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html">Trang Chủ</a>
+        <div class="thads">
+          <a href="./sanpham.html" class="active"><div class="thanh-ngang"><span class="traitim">♥</span></div>Sản Phẩm ▾</a>
+          <ul class="dscon">
+            <li><a href="./sanpham.html#bosuutap-hoa">Bộ sưu tập hoa</a></li>
+            <li><a href="./sanpham.html#hoatuooi">Hoa Tươi</a></li>
+          </ul>
+        </div>
+        <div class="thads">
+          <a href="./vechungtoi.html">Về chúng tôi ▾</a>
+          <ul class="dscon">
+            <li><a href="./vechungtoi.html">Câu chuyện Brenna</a></li>
+            <li><a href="./vechungtoi.html#hoatuoi">Câu chuyện Hoa tươi</a></li>
+            <li><a href="./vechungtoi.html#quanho">Câu chuyện Quà nhỏ</a></li>
+            <li><a href="./vechungtoi.html#phukien">Câu chuyện Phụ Kiện</a></li>
+          </ul>
+        </div>
+        <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+</div>
+<main>
+<section class="chi-tiet-san-pham">
+    <div class="khu-vuc-hinh">
+        <div class="anh-nho">
+            <img
+                src="../img/d1.jpg"
+                class="anh-dang-chon"
+                data-ten="Dây chuyền trái tim"
+                data-gia="200.000đ"
+                data-gia-cu="250.000đ"
+                data-giam="Giảm 20%"
+                data-mo-ta="Dây chuyền hình trái tim mang vẻ đẹp ngọt ngào, là món quà ý nghĩa dành tặng người mình yêu thương."
+                onclick="doiAnh(this)"
+            >
+            <img
+                src="../img/d2.jpg"
+                data-ten="Dây chuyền ngọc trai"
+                data-gia="220.000đ"
+                data-gia-cu="280.000đ"
+                data-giam="Giảm 21%"
+                data-mo-ta="Dây chuyền ngọc trai với thiết kế thanh lịch, nhẹ nhàng và tinh tế, phù hợp để sử dụng hằng ngày."
+                onclick="doiAnh(this)"
+            >
+            <img
+                src="../img/d3.jpg"
+                data-ten="Dây chuyền hoa"
+                data-gia="190.000đ"
+                data-gia-cu="240.000đ"
+                data-giam="Giảm 21%"
+                data-mo-ta="Dây chuyền hình hoa nhỏ xinh với thiết kế nữ tính, nhẹ nhàng và đáng yêu."
+                onclick="doiAnh(this)"
+            >
+            <img
+                src="../img/d4.jpg"
+                data-ten="Dây chuyền charm"
+                data-gia="250.000đ"
+                data-gia-cu="300.000đ"
+                data-giam="Giảm 17%"
+                data-mo-ta="Dây chuyền charm với nhiều chi tiết nhỏ xinh, tạo điểm nhấn nổi bật và cá tính cho người đeo."
+                onclick="doiAnh(this)"
+            >
+        </div>
+        <div class="anh-lon">
+            <img
+                id="anh-chinh"
+                src="../img/d1.jpg"
+                alt="Dây chuyền"
+            >
+        </div>
+    </div>
+    <div class="thong-tin-san-pham">
+        <span class="nhan-san-pham">
+            Dây chuyền
+        </span>
+        <h1 id="ten-san-pham">
+            Dây chuyền trái tim
+        </h1>
+        <div class="gia-san-pham">
+            <strong id="gia-san-pham">
+                200.000đ
+            </strong>
+            <del id="gia-cu">
+                250.000đ
+            </del>
+            <span id="giam-gia">
+                Giảm 20%
+            </span>
+
+        </div>
+
+        <p class="mo-ta-ngan" id="mo-ta-ngan">
+
+            Dây chuyền hình trái tim mang vẻ đẹp ngọt ngào, là món quà ý nghĩa dành tặng người mình yêu thương.
+
+        </p>
+          
+        <div class="chon-so-luong">
+            <label for="so-luong">Số lượng:</label>
+            <input
+                type="number"
+                id="so-luong"
+                min="1"
+                value="1"
+            >
+        </div>
+        <div class="nut-mua-hang">
+            <button type="button" onclick="themVaoGio()">
+                ♡ Thêm vào giỏ hàng
+            </button>
+
+            <a href="./lienhe.html">
+                🛒 Xem giỏ hàng
+            </a>
+        </div>
+        <div class="thong-tin-giao-hang">
+            <div>
+                <b>♧　Thiết kế tinh tế</b>
+                <small>
+                    Nhẹ nhàng, nữ tính và dễ phối đồ
+                </small>
+            </div>
+            <div>
+                <b>▣　Giao hàng nhanh</b>
+                <small>
+                    Giao trong 2 giờ tại nội thành
+                </small>
+            </div>
+            <div>
+                <b>▤　Thanh toán linh hoạt</b>
+                <small>
+                    COD, chuyển khoản, ví điện tử
+                </small>
+            </div>
+        </div>
+        <div class="chia-se">Chia sẻ　　ⓕ　◉　♪　🔗</div>
+    </div>
+</section>
+<section class="khu-vuc-mo-ta">
+    <div class="mo-ta-san-pham">
+        <h2>Mô tả sản phẩm</h2>
+        <p>Dây chuyền là món phụ kiện nhỏ xinh giúp tạo điểm nhấn cho phong cách cá nhân. Với nhiều kiểu dáng như ngọc trai, trái tim, hoa và charm, dây chuyền phù hợp để sử dụng hằng ngày hoặc làm quà tặng cho người thân yêu.</p>
+        <h3>✿　“Một sợi dây – Một lời yêu thương”</h3>
+    </div>
+    <div class="y-nghia">
+        <h2>Ý nghĩa</h2>
+        <p>♡　 Sự thanh lịch, dịu dàng và tinh tế</p>
+        <p>♧　 Tình yêu, sự gắn kết và yêu thương</p>
+        <p>☆　 Món quà nhỏ xinh và ý nghĩa</p>
+        <h2>Lưu ý</h2>
+        <ul>
+            <li>Bảo quản nơi khô ráo, tránh tiếp xúc trực tiếp với nước.</li>
+            <li>Tránh va chạm mạnh để sản phẩm luôn giữ được vẻ đẹp.</li>
+            <li>Hỗ trợ ghi thiệp miễn phí theo yêu cầu.</li>
+        </ul>
+    </div>
+</section>
+<section class="san-pham-lien-quan">
+
+    <div class="tieu-de-lien-quan">
+
+        <h2>
+            ✿　Sản phẩm liên quan
+        </h2>
+
+        <a href="./sanpham.html#sanpham">
+            Xem tất cả →
+        </a>
+
+    </div>
+
+    <div class="danh-sach-san-pham" id="sanpham">     
+
+        <div class="san-pham hoa">   
+
+            <a href="./nuochoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/nh1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Nước hoa
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham hoa">   
+
+            <a href="./gaubong.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/gb1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Gấu bông
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./nenthom.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/nt1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Nến thơm
+                </div>   
+
+            </a>
+
+        </div>   
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./kep.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/k1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Kẹp tóc
+                </div>   
+
+            </a>
+
+        </div>
+
+        <div class="san-pham phu-kien">   
+
+            <a href="./mockhoa.html">
+
+                <div class="o-san-pham">   
+                    <img src="../img/mk1.jpg">
+                </div>   
+
+                <div class="ten-san-pham">
+                    Móc khóa
+                </div>   
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+<div class="thanh-ngang"><span class="traitim">♥</span></div>
+<footer class="chan-trang">
+  <div class="logo-cuoi">✿ Brenna <small>Flowers & Accessories</small></div>
+    Trang chủ　 |　 Sản phẩm　 |　 Về chúng tôi |　 Liên hệ</div>
+    <small> Nhận thông tin khuyến mãi và bộ sưu tập mới nhất! </small>
+    <br/>ⓕ facebook　◎　♪ tiktok 
+  </div>
+</footer> 
+<script src="../java/scrip.js"></script>
+</body>
+</html>
