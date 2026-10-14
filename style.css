@@ -11,7 +11,7 @@ body {
     width: 100%;
     min-width: 0;
     background-color: #5A0012;
-    background-image: url("../img/br1.png");
+    background-image: url("./br1.png");
     background-position: center 4475px;
     background-size: 100% auto;
     overflow-x: hidden;
@@ -23,7 +23,7 @@ header {
     Align-items: center;
     justify-content: center;
     padding: 50px;
-    background-image: url("../img/br1.png");
+    background-image: url("./br1.png");
     background-position: center;
     background-size: 40% auto;
 }
@@ -211,7 +211,7 @@ footer {
     gap: 20px;
     font-size: 18px;
     padding: 50px;
-    background-image:radial-gradient(circle, rgba(90, 0, 0, 1) 0%, rgba(90, 0, 0, 0.1) 70%),linear-gradient(rgb(90,0,0,0.5)) ,url("../img/f.jpg");
+    background-image:radial-gradient(circle, rgba(90, 0, 0, 1) 0%, rgba(90, 0, 0, 0.1) 70%),linear-gradient(rgb(90,0,0,0.5)) ,url("./f.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
