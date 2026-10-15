@@ -10,7 +10,7 @@ body {
     width: 100%;
     min-width: 1280px;
     background-color: #5A0012;
-    background-image: url("../img/br1.png");
+    background-image: url("./br1.png");
     background-position: 100% auto;
     background-size:100% auto;
     overflow-x: auto;
