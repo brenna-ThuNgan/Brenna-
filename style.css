@@ -508,6 +508,7 @@ footer p {
 .mo-ta-ngan {
     line-height: 1.7;
     color: #f8e7b0;
+    font-size: 20px;
 }
 .chon-so-luong {
     display: flex;
@@ -553,7 +554,8 @@ footer p {
     padding: 12px 15px;
     border: 1px solid #5A0012;
     border-radius: 12px;
-    background: #fff8e7b0;
+    background: #edffe7b0;
+    font-size: 22px;
 }
 .thong-tin-giao-hang div {
     margin: 10px 0;
@@ -595,7 +597,7 @@ footer p {
 .khu-vuc-mo-ta li {
     font-weight: bold;
     line-height: 1.8;
-    font-size: 14px;
+    font-size: 20px;
 }
 .mo-ta-san-pham h3 {
     font-style: italic;
@@ -614,9 +616,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     color: #ffd700;
-}
-.tieu-de-lien-quan h2 {
-    font-size: 22px;
+    font-size: 18px;
 }
 .san-pham-lien-quan .danh-sach-san-pham {
     display: grid;
@@ -648,7 +648,7 @@ footer p {
 }
 .tieu-de-bo-suu-tap p {
     color: #f8e7b0;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 10px;
 }
 .danh-sach-bo-suu-tap {
