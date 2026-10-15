@@ -10,7 +10,7 @@ body {
     width: 100%;
     min-width: 1280px;
     background-color: #5A0012;
-    background-image: url("./br1.png");
+    background-image: url("../img/br1.png");
     background-position: 100% auto;
     background-size:100% auto;
     overflow-x: auto;
@@ -904,7 +904,7 @@ footer p {
 }
 .thong-tin-gio p {
     margin: 6px 0;
-    font-size: 14px;
+    font-size: 18px;
 }
 .thong-tin-gio input {
     width: 70px;
@@ -914,6 +914,7 @@ footer p {
     margin-left: 8px;
     padding: 5px 10px;
     cursor: pointer;
+    color: #5A0012;
 }
 .dong-tong-tien {
     display: flex;
@@ -1014,6 +1015,7 @@ footer p {
 .form-lien-he {
     flex: 1;
     min-width: 0;
+    font-size: 18px;
 }
 .thong-tin-lien-he {
     color: #f8e7b0;
@@ -1085,6 +1087,7 @@ footer p {
     border: none;
     border-radius: 25px;
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
 }
 .nut-gui:hover {
