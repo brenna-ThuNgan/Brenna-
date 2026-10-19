@@ -21,7 +21,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px;
-    background-image: url("../img/h.jpg");
+    background-image: url("./h.jpg");
     background-position: center;
     background-size: 100% auto;
 }
@@ -213,7 +213,7 @@ footer {
     font-size: 24px;
     font-weight: bold;
     padding: 50px;
-    background-image:radial-gradient(circle,rgba(168, 94, 87, 0.45) 0%,rgba(143, 69, 75, 0.1) 70%),linear-gradient(rgba(232, 189, 181, 0.35)),url("../img/f.jpg");
+    background-image:radial-gradient(circle,rgba(168, 94, 87, 0.45) 0%,rgba(143, 69, 75, 0.1) 70%),linear-gradient(rgba(232, 189, 181, 0.35)),url("./ft.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,7 +367,7 @@ footer p {
     margin: 49px auto 10px;
     padding: 35px 20px;
     text-align: center;
-    background-image: url("../img/bst.jpg");
+    background-image: url("./bst.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
