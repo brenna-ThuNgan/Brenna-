@@ -347,8 +347,7 @@ footer p {
     background: #6B2335;
 }
 .hop-ben :hover{
-    background-color: #9CDEBD;
-    color: #790000;
+    background-color: #3a6d54;
 }
 .bieu-tuong {
     font-size: 19px;
@@ -640,7 +639,6 @@ footer p {
     margin-bottom: 30px;
 }
 .tieu-de-bo-suu-tap h2 {
-    font-family: "Times New Roman", serif;
     font-size: 32px;
     margin: 12px 0;
 }
