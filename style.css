@@ -4,8 +4,7 @@
     padding: 0;
     text-decoration: none;
     color: inherit;
-    font-family: "Courier New", Courier, monospace; 
-    scroll-behavior: smooth;
+    font-family: "Courier New", Courier, monospace; scroll-behavior: smooth;
 }
 body {
     width: 100%;
@@ -765,7 +764,7 @@ footer p {
     align-items: center;
     gap: 35px;
     margin: 0 auto;
-    background-color: #860b27b9;
+    background-color: #701027d8;
     padding: 20px 20px;
     border-radius: 20px;
     color: #FFD700;
