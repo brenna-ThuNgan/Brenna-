@@ -4,7 +4,8 @@
     padding: 0;
     text-decoration: none;
     color: inherit;
-    font-family: "Courier New", Courier, monospace; scroll-behavior: smooth;
+    font-family: "Courier New", Courier, monospace; 
+    scroll-behavior: smooth;
 }
 body {
     width: 100%;
@@ -738,18 +739,18 @@ footer p {
     border-radius: 10px;
 }
 .cau-chuyen-brenna .chu-nho {
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 4px;
 }
 .cau-chuyen-brenna h2 {
     margin: 20px 0;
     font-family: "Times New Roman", serif;
-    font-weight: normal;
+    font-weight: bolder;
 }
 .cau-chuyen-brenna p {
     margin: 18px 0;
     font-family: "Times New Roman", serif;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.9;
 }
 .cau-chuyen-brenna h3 {
@@ -764,7 +765,7 @@ footer p {
     align-items: center;
     gap: 35px;
     margin: 0 auto;
-    background-color: #6B2335;
+    background-color: #894253cc;
     padding: 20px 20px;
     border-radius: 20px;
     color: #FFD700;
@@ -778,7 +779,7 @@ footer p {
     min-width: 0;
     height: 700px;
     overflow: hidden;
-    border: 1px solid #6B2335;
+    border: 1px solid #FFD700;
     padding: 8px;
 }
 .hinh img {
@@ -810,6 +811,7 @@ footer p {
 .nhan {
     font-size: 11px;
     letter-spacing: 2px;
+    color: #FFD700;
 }
 .noi-dung h2 {
     font-family: "Times New Roman", serif;
