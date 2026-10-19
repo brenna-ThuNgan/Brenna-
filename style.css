@@ -218,10 +218,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer p {
-    font-size: 17px;
-    color: #C8E2D5;
-}
 .danh-sach-san-pham {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
