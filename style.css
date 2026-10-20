@@ -1678,6 +1678,12 @@ body li,
 body label {
     font-family: "Times New Roman", Times, serif;
 }
+    body,
+    body *,
+    body *::before,
+    body *::after {
+        font-family: "Times New Roman", Times, serif !important;
+    }
 }
 
 /* =========================
