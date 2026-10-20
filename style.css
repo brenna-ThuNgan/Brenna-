@@ -1666,6 +1666,18 @@ footer {
     .loi-nhan {
         padding: 14px;
     }
+
+body,
+body p,
+body a,
+body button,
+body input,
+body textarea,
+body select,
+body li,
+body label {
+    font-family: "Times New Roman", Times, serif;
+}
 }
 
 /* =========================
