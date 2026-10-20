@@ -1526,7 +1526,6 @@ footer {
         font-size: 17px;
     }
 
-    /* Trang liên hệ */
     .khung-lien-he {
         width: 94%;
         max-width: 100%;
@@ -1556,7 +1555,6 @@ footer {
         max-width: 100%;
     }
 
-    /* Chân trang */
     footer {
         width: 100%;
         max-width: 100%;
@@ -1650,5 +1648,70 @@ footer {
 
     img {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Chữ nội dung dễ đọc, căn đều hai bên */
+    .cau-chuyen-brenna p,
+    .noi-dung > p:not(.ten-tieng-anh),
+    .noi-dung blockquote,
+    .khu-vuc-mo-ta p,
+    .khu-vuc-mo-ta li,
+    .mo-ta-ngan,
+    .thong-tin-giao-hang,
+    .loi-moi p {
+        text-align: justify;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    nav,
+    .dau-trang nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        min-width: 0;
+        padding: 10px 8px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    nav a {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    /* Không để chữ tên thương hiệu bị ngắt giữa từ */
+    .ten {
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav,
+    .dau-trang nav {
+        justify-content: flex-start;
+        gap: 14px;
+        font-size: 13px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        flex-shrink: 0;
     }
 }
