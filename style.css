@@ -1148,4 +1148,197 @@ footer {
     * {
         font-family: "Times New Roman", serif !important;
     }
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    .ten {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 12px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .dscon li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .chu-tren-anh span {
+        font-size: 13px;
+    }
+
+    .chu-tren-anh h1 {
+        font-size: 18px;
+    }
+
+    .chu-tren-anh button {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 25px 12px;
+    }
+
+    .san-pham {
+        font-size: 16px;
+    }
+
+    .ten-san-pham {
+        font-size: 16px;
+        padding: 8px 4px;
+    }
+
+    .muc-danh-muc span {
+        font-size: 20px;
+    }
+
+    .muc-danh-muc b {
+        font-size: 16px;
+    }
+
+    .muc-danh-muc p {
+        font-size: 13px;
+    }
+
+    .chu {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .loi-moi {
+        padding: 20px 10px;
+    }
+
+    .loi-moi p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .nut-xem {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .thong-tin-san-pham h1 {
+        font-size: 25px;
+    }
+
+    .gia-san-pham strong {
+        font-size: 21px;
+    }
+
+    .mo-ta-ngan {
+        font-size: 16px;
+    }
+
+    .thong-tin-giao-hang {
+        font-size: 16px;
+    }
+
+    .khu-vuc-mo-ta h2 {
+        font-size: 19px;
+    }
+
+    .khu-vuc-mo-ta p,
+    .khu-vuc-mo-ta li {
+        font-size: 16px;
+    }
+
+    .tieu-de-bo-suu-tap h2 {
+        font-size: 24px;
+    }
+
+    .tieu-de-bo-suu-tap p {
+        font-size: 17px;
+    }
+
+    .noi-dung-bo-suu-tap h3 {
+        font-size: 19px;
+    }
+
+    .cau-chuyen-brenna {
+        padding: 20px 12px;
+    }
+
+    .cau-chuyen-brenna .chu-nho {
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .cau-chuyen-brenna h2 {
+        font-size: 23px;
+    }
+
+    .cau-chuyen-brenna p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .noi-dung {
+        font-size: 17px;
+    }
+
+    .noi-dung h2 {
+        font-size: 25px;
+    }
+
+    .noi-dung > p:not(.ten-tieng-anh) {
+        font-size: 16px;
+    }
+
+    .noi-dung blockquote {
+        font-size: 16px;
+    }
+
+    .ket-thuc h2 {
+        font-size: 24px;
+    }
+
+    .ket-thuc p {
+        font-size: 16px;
+    }
+
+    .thong-tin-gio p {
+        font-size: 14px;
+    }
+
+    .dong-tong-tien strong,
+    .dong-tong-tien span {
+        font-size: 17px;
+    }
+
+    .thong-tin-lien-he,
+    .form-lien-he {
+        font-size: 15px;
+    }
+
+    .thong-tin-lien-he h2,
+    .form-lien-he h2 {
+        font-size: 21px;
+    }
+
+    .form-lien-he input,
+    .form-lien-he select,
+    .form-lien-he textarea {
+        font-size: 16px;
+    }
+
+    .nut-gui {
+        font-size: 16px;
+    }
 }
