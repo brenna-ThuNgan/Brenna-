@@ -1145,7 +1145,6 @@ footer {
     line-height: 1.6;
 }
 
-
 /* =========================
    RESPONSIVE - TABLET
 ========================= */
@@ -1239,7 +1238,7 @@ footer {
         font-size: 16px;
     }
 
-    /* Menu luôn nằm trên một hàng */
+    /* Menu nằm ngang một hàng, có thể vuốt ngang */
     .dau-trang nav,
     .dau-trang.nav-dinh nav {
         position: relative;
@@ -1529,16 +1528,16 @@ footer {
     .cau-chuyen-brenna {
         width: 92%;
         margin: 25px auto;
-        padding: 22px 16px;
+        padding: 16px 12px;
     }
 
     .cau-chuyen-brenna .chu-nho {
-        font-size: 17px;
-        letter-spacing: 2px;
+        font-size: 15px;
+        letter-spacing: 1px;
     }
 
     .cau-chuyen-brenna p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.7;
     }
 
@@ -1566,17 +1565,17 @@ footer {
     .noi-dung {
         width: 100%;
         flex: auto;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.6;
     }
 
     .noi-dung h2 {
-        font-size: 27px;
+        font-size: 23px;
     }
 
     .noi-dung > p:not(.ten-tieng-anh),
     .noi-dung blockquote {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 1.7;
     }
 
@@ -1593,11 +1592,12 @@ footer {
 
     .tieu-de p,
     .ket-thuc p {
-        font-size: 16px;
+        font-size: 15px;
         padding: 10px 12px;
+        line-height: 1.6;
     }
 
-    /* Chỉ căn đều nội dung trang Về chúng tôi */
+    /* Chỉ căn đều chữ ở trang Về chúng tôi */
     .cau-chuyen-brenna p,
     .cau-chuyen .noi-dung > p:not(.ten-tieng-anh),
     .cau-chuyen .noi-dung blockquote,
@@ -1702,7 +1702,7 @@ footer {
         font-size: 12px;
     }
 
-    /* Danh sách sản phẩm vẫn giữ hai cột */
+    /* Danh sách sản phẩm giữ hai cột */
     .danh-sach-san-pham,
     .khung-san-pham > .danh-sach-san-pham,
     .san-pham-lien-quan .danh-sach-san-pham {
@@ -1778,22 +1778,38 @@ footer {
         font-size: 13px;
     }
 
-    /* Trang Về chúng tôi */
+    /* Trang Về chúng tôi - điện thoại nhỏ */
     .cau-chuyen-brenna {
-        padding: 18px 12px;
+        padding: 16px 12px;
     }
 
     .cau-chuyen-brenna .chu-nho {
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 1px;
     }
 
     .cau-chuyen-brenna p {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .noi-dung {
+        font-size: 15px;
     }
 
     .noi-dung h2 {
-        font-size: 24px;
+        font-size: 21px;
+    }
+
+    .noi-dung > p:not(.ten-tieng-anh),
+    .noi-dung blockquote {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .ket-thuc p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     /* Giỏ hàng */
