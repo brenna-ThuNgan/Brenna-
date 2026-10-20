@@ -1145,13 +1145,8 @@ footer {
     line-height: 1.6;
 }
 
-/* ========================================
-   RESPONSIVE - ĐIỆN THOẠI
-   Máy tính giữ nguyên giao diện và font cũ
-======================================== */
 @media screen and (max-width: 768px) {
 
-    /* Font chữ: toàn bộ nội dung dùng Times New Roman */
     body,
     body *,
     body *::before,
@@ -1170,7 +1165,6 @@ footer {
         overflow-x: hidden;
     }
 
-    /* Đầu trang */
     header {
         width: 100%;
         padding: 15px 10px;
@@ -1192,7 +1186,6 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    /* Menu nằm ngang, có thể vuốt để xem hết */
     .dau-trang nav,
     .dau-trang.nav-dinh nav {
         position: relative;
@@ -1263,7 +1256,6 @@ footer {
         font-size: 15px;
     }
 
-    /* Hình ảnh trang chủ */
     .khung-anh {
         display: block;
         width: 94%;
@@ -1297,7 +1289,6 @@ footer {
         font-size: 13px;
     }
 
-    /* Lời mời / banner */
     .loi-moi {
         width: 94%;
         margin: 25px auto;
@@ -1318,7 +1309,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Danh mục */
     .cac-muc {
         flex-wrap: wrap;
     }
@@ -1340,7 +1330,6 @@ footer {
         font-size: 13px;
     }
 
-    /* Danh sách sản phẩm */
     .khung-san-pham {
         display: flex;
         flex-direction: column;
@@ -1413,8 +1402,7 @@ footer {
     .bieu-tuong {
         font-size: 16px;
     }
-
-    /* Chi tiết sản phẩm */
+    
     .chi-tiet-san-pham {
         display: flex;
         flex-direction: column;
@@ -1533,7 +1521,6 @@ footer {
         margin-left: 10px;
     }
 
-    /* Mô tả sản phẩm */
     .khu-vuc-mo-ta {
         display: flex;
         flex-direction: column;
@@ -1566,7 +1553,6 @@ footer {
         overflow-wrap: break-word;
     }
 
-    /* Sản phẩm liên quan */
     .san-pham-lien-quan {
         width: 94%;
         min-width: 0;
@@ -1602,7 +1588,6 @@ footer {
         margin-top: 15px;
     }
 
-    /* Bộ sưu tập */
     .bo-suu-tap {
         width: 94%;
         max-width: none;
@@ -1639,7 +1624,6 @@ footer {
         font-size: 21px;
     }
 
-    /* Trang Về chúng tôi */
     .trang-bo-hoa {
         width: 100%;
     }
@@ -1807,7 +1791,6 @@ footer {
         overflow-wrap: break-word;
     }
 
-    /* Giỏ hàng */
     .gio-hang {
         width: 100%;
         min-width: 0;
@@ -1888,7 +1871,6 @@ footer {
         font-size: 12px;
     }
 
-    /* Liên hệ */
     .khung-lien-he {
         display: flex;
         flex-direction: column;
@@ -1951,9 +1933,6 @@ footer {
     }
 }
 
-/* ========================================
-   RESPONSIVE - ĐIỆN THOẠI NHỎ
-======================================== */
 @media screen and (max-width: 480px) {
 
     header {
@@ -2003,7 +1982,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Sản phẩm vẫn giữ hai cột */
     .khung-san-pham > .danh-sach-san-pham,
     .danh-sach-san-pham,
     .san-pham-lien-quan .danh-sach-san-pham {
@@ -2036,7 +2014,6 @@ footer {
         font-size: 12px;
     }
 
-    /* Chi tiết sản phẩm */
     .anh-nho {
         width: 42px;
     }
@@ -2068,7 +2045,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Sản phẩm liên quan */
     .tieu-de-lien-quan {
         gap: 5px;
     }
@@ -2081,7 +2057,6 @@ footer {
         font-size: 12px;
     }
 
-    /* Về chúng tôi */
     .cau-chuyen-brenna {
         padding: 15px 10px;
     }
@@ -2125,7 +2100,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Giỏ hàng */
     .dong-san-pham-gio img {
         width: 48px;
         height: 58px;
@@ -2140,7 +2114,6 @@ footer {
         font-size: 15px;
     }
 
-    /* Liên hệ */
     .thong-tin-lien-he,
     .form-lien-he {
         padding: 12px;
