@@ -1844,4 +1844,10 @@ body label {
         font-size: 16px;
         padding: 22px 10px;
     }
+
+    body,
+body *,
+body *::before,
+body *::after {
+    font-family: "Times New Roman", Times, serif !important;
 }
