@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (thongBao) {
             thongBao.textContent =
                 "♡ Đặt hàng thành công! Mã đơn: " + don.maDon;
-            thongBao.style.color = "#ffd700";
+            thongBao.style.color = "#6b2335";
             thongBao.style.fontWeight = "bold";
         }
 
