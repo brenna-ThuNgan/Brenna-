@@ -1145,35 +1145,507 @@ footer {
     line-height: 1.6;
 }
 
-/* SỬA CÁC THÀNH PHẦN CỐ ĐỊNH TRÊN ĐIỆN THOẠI */
+/* ======================================== */
+/* GIAO DIỆN DÀNH CHO ĐIỆN THOẠI */
+/* Máy tính giữ nguyên giao diện hiện tại   */
+/* Điện thoại sử dụng Times New Roman       */
+/* ======================================== */
+
 @media screen and (max-width: 768px) {
-    body {
-        min-width: 0 !important;
-        width: 100% !important;
-        overflow-x: hidden;
+
+    /* Chỉ sử dụng Times New Roman trên điện thoại */
+    html,
+    body,
+    body * {
+        font-family: "Times New Roman", Times, serif !important;
     }
 
-    nav,
-    .dau-trang nav {
-        width: 100% !important;
-        min-width: 0 !important;
+    /* Điều chỉnh chiều rộng trang */
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
         max-width: 100%;
+        overflow-x: hidden;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    /* Phần đầu trang */
+    header {
+        max-width: 100%;
+        padding: 15px 10px;
         flex-wrap: wrap;
     }
 
-    .bo-anh,
-    .danh-sach-san-pham,
-    .khung-san-pham,
-    .chi-tiet-san-pham,
-    .khu-vuc-mo-ta,
-    .cau-chuyen,
-    .khung-lien-he {
-        min-width: 0 !important;
+    #logo {
+        width: 60px;
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .ten {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Thanh menu */
+    nav,
+    .dau-trang nav {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+        padding: 12px 8px;
+        font-size: 15px;
+    }
+
+    nav a {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .dscon {
+        width: 190px;
+        max-width: 90vw;
+    }
+
+    .dscon li a {
+        font-size: 14px;
+    }
+
+    /* Ba hình ảnh trang chủ */
+    .bo-anh {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .khung-anh {
+        display: block;
+        width: 94%;
+        max-width: 100%;
+        margin: 12px auto;
+    }
+
+    .khung-anh img {
         max-width: 100%;
     }
 
-    img {
+    .chu-tren-anh {
+        width: 75%;
+        max-width: 100%;
+    }
+
+    .chu-tren-anh span {
+        font-size: 13px;
+    }
+
+    .chu-tren-anh h1 {
+        font-size: 21px;
+        overflow-wrap: anywhere;
+    }
+
+    .chu-tren-anh button {
+        margin-top: 5px;
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    /* Danh sách sản phẩm */
+    .danh-sach-san-pham {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+
+    .san-pham {
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .san-pham img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .ten-san-pham {
+        padding: 8px 4px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Các danh mục */
+    .muc-danh-muc {
+        max-width: 100%;
+    }
+
+    .muc-danh-muc span {
+        font-size: 18px;
+    }
+
+    .muc-danh-muc b {
+        font-size: 15px;
+    }
+
+    .muc-danh-muc p {
+        font-size: 13px;
+    }
+
+    /* Khung sản phẩm và thanh bên */
+    .khung-san-pham {
+        width: 95%;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .thanh-ben {
+        width: 100%;
+        min-width: 0;
+        margin-top: 20px;
+    }
+
+    .khung-san-pham > .danh-sach-san-pham {
+        width: 100%;
+        min-width: 0;
+        margin-top: 20px;
+    }
+
+    /* Banner lời mời */
+    .loi-moi {
+        width: 94%;
+        max-width: 100%;
+        margin: 25px auto;
+        padding: 20px 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .loi-moi p {
+        font-size: 17px;
+        padding: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Chi tiết sản phẩm */
+    .chi-tiet-san-pham {
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .khu-vuc-hinh {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .anh-nho {
+        width: 55px;
+        max-width: 100%;
+    }
+
+    .anh-nho img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .anh-lon {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: contain;
+    }
+
+    .thong-tin-san-pham {
+        width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .thong-tin-san-pham h1 {
+        font-size: 25px;
+    }
+
+    .gia-san-pham strong {
+        font-size: 22px;
+    }
+
+    .mo-ta-ngan,
+    .thong-tin-giao-hang {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Mô tả và ý nghĩa sản phẩm */
+    .khu-vuc-mo-ta {
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .mo-ta-san-pham {
+        min-width: 0;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #6B2335;
+        padding-bottom: 15px;
+    }
+
+    .khu-vuc-mo-ta h2 {
+        font-size: 20px;
+    }
+
+    .khu-vuc-mo-ta p,
+    .khu-vuc-mo-ta li {
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    /* Sản phẩm liên quan */
+    .san-pham-lien-quan .danh-sach-san-pham {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    /* Bộ sưu tập */
+    .bo-suu-tap {
+        width: 94%;
+        max-width: 100%;
+    }
+
+    .tieu-de-bo-suu-tap h2 {
+        font-size: 25px;
+    }
+
+    .tieu-de-bo-suu-tap p {
+        font-size: 17px;
+    }
+
+    .danh-sach-bo-suu-tap {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .o-bo-suu-tap {
+        width: 100%;
+        max-width: 100%;
+        height: 350px;
+    }
+
+    /* Câu chuyện Brenna */
+    .cau-chuyen-brenna {
+        max-width: 100%;
+        margin: 25px 10px;
+        padding: 22px 15px;
+    }
+
+    .cau-chuyen-brenna .chu-nho {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .cau-chuyen-brenna p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .cau-chuyen {
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .cau-chuyen.doi {
+        flex-direction: column;
+    }
+
+    .hinh {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
+        height: 320px;
+    }
+
+    .noi-dung {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .noi-dung h2 {
+        font-size: 26px;
+    }
+
+    .noi-dung > p:not(.ten-tieng-anh),
+    .noi-dung blockquote {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .ket-thuc {
+        max-width: 100%;
+        margin: 40px 15px;
+        padding: 25px 10px;
+    }
+
+    /* Giỏ hàng */
+    .dong-san-pham-gio {
+        min-width: 0;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .dong-san-pham-gio img {
+        width: 60px;
+        max-width: 100%;
+        height: 65px;
+        object-fit: cover;
+    }
+
+    .thong-tin-gio {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .thong-tin-gio p {
+        font-size: 14px;
+    }
+
+    .dong-tong-tien strong,
+    .dong-tong-tien span {
+        font-size: 17px;
+    }
+
+    /* Trang liên hệ */
+    .khung-lien-he {
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .thong-tin-lien-he,
+    .form-lien-he {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .dong-lien-he {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .form-lien-he input,
+    .form-lien-he textarea,
+    .form-lien-he select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Chân trang */
+    footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 12px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Hình ảnh không tràn khỏi màn hình */
+    img,
+    video,
+    iframe {
         max-width: 100%;
     }
 }
+
+/* ======================================== */
+/* ĐIỆN THOẠI MÀN HÌNH NHỎ: 480px TRỞ XUỐNG */
+/* ======================================== */
+
+@media screen and (max-width: 480px) {
+
+    nav,
+    .dau-trang nav {
+        gap: 9px 12px;
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+
+    .khung-anh {
+        width: 96%;
+    }
+
+    .chu-tren-anh {
+        width: 82%;
+    }
+
+    .chu-tren-anh h1 {
+        font-size: 18px;
+    }
+
+    .chu-tren-anh span {
+        font-size: 12px;
+    }
+
+    .danh-sach-san-pham {
+        gap: 8px;
+        padding: 0 8px;
+    }
+
+    .ten-san-pham {
+        font-size: 14px;
+    }
+
+    .hinh {
+        height: 280px;
+    }
+
+    .noi-dung h2 {
+        font-size: 23px;
+    }
+
+    .thong-tin-san-pham h1 {
+        font-size: 23px;
+    }
+
+    .o-bo-suu-tap {
+        height: 300px;
+    }
+}
+
+
 
