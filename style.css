@@ -1145,208 +1145,1016 @@ footer {
     line-height: 1.6;
 }
 
+
+/* ========================================
+   RESPONSIVE - ĐIỆN THOẠI
+   Máy tính giữ nguyên giao diện và font cũ
+======================================== */
 @media screen and (max-width: 768px) {
-    * {
-        box-sizing: border-box;
-        font-family: "Times New Roman", serif !important;
+
+    /* Font chữ: toàn bộ nội dung dùng Times New Roman */
+    body,
+    body *,
+    body *::before,
+    body *::after {
+        font-family: "Times New Roman", Times, serif !important;
     }
 
-    html,
-    body {
+    html {
         width: 100%;
-        min-width: 0 !important;
         overflow-x: hidden;
     }
 
     body {
-        font-size: 14px;
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
     }
 
+    /* Đầu trang */
     header {
-        padding: 12px 8px;
+        width: 100%;
+        padding: 15px 10px;
+        background-size: cover;
+        background-position: center;
+        gap: 8px;
+    }
+
+    #logo {
+        width: 58px;
+        max-width: 20%;
+        height: auto;
+        flex-shrink: 0;
     }
 
     .ten {
-        font-size: 20px !important;
+        min-width: 0;
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Menu nằm ngang, có thể vuốt để xem hết */
+    .dau-trang nav,
+    .dau-trang.nav-dinh nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
     }
 
     nav {
-        width: 100% !important;
-        min-width: 0 !important;
-        gap: 8px;
-        padding: 8px 4px;
-        flex-wrap: wrap;
-        font-size: 13px;
+        width: 100%;
+        min-width: 0;
+        height: 55px;
+        min-height: 55px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 22px;
+        padding: 0 12px;
+        font-size: 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav a,
+    nav .thads {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    nav a.active,
+    nav a:hover {
+        transform: none;
+    }
+
+    nav a.active .thanh-ngang {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .thanh-ngang {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .traitim {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+
+    .dscon {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: none;
+        width: 210px;
+        max-width: 85vw;
+        z-index: 1100;
+    }
+
     .dscon li a {
-        font-size: 13px !important;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    /* Hình ảnh trang chủ */
+    .khung-anh {
+        display: block;
+        width: 94%;
+        margin: 12px auto;
+        border-radius: 10px;
+    }
+
+    .khung-anh img {
+        width: 100%;
+        height: auto;
+    }
+
+    .chu-tren-anh {
+        left: 5%;
+        width: 65%;
     }
 
     .chu-tren-anh span {
-        font-size: 11px !important;
+        font-size: 13px;
     }
 
     .chu-tren-anh h1 {
-        font-size: 17px !important;
+        font-size: 20px;
+        line-height: 1.2;
+        margin: 8px 0;
     }
 
     .chu-tren-anh button {
-        font-size: 12px !important;
-        padding: 6px 9px;
+        margin-top: 6px;
+        padding: 7px 11px;
+        font-size: 13px;
     }
 
+    /* Lời mời / banner */
+    .loi-moi {
+        width: 94%;
+        margin: 25px auto;
+        padding: 20px 12px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .loi-moi p {
+        margin: 10px 0;
+        padding: 9px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .nut-xem {
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+
+    /* Danh mục */
+    .cac-muc {
+        flex-wrap: wrap;
+    }
+
+    .muc-danh-muc {
+        min-width: 33.333%;
+        padding: 7px 4px;
+    }
+
+    .muc-danh-muc span {
+        font-size: 19px;
+    }
+
+    .muc-danh-muc b {
+        font-size: 15px;
+    }
+
+    .muc-danh-muc p {
+        font-size: 13px;
+    }
+
+    /* Danh sách sản phẩm */
+    .khung-san-pham {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 94%;
+        max-width: none;
+        gap: 15px;
+        margin: 15px auto;
+    }
+
+    .thanh-ben {
+        width: 100%;
+        min-width: 0;
+        margin-top: 15px;
+    }
+
+    .hop-ben {
+        padding: 14px;
+    }
+
+    .khung-san-pham > .danh-sach-san-pham,
+    .danh-sach-san-pham {
+        display: grid;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .san-pham {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+        border-width: 1px;
+    }
+
+    .san-pham:hover {
+        transform: none;
+    }
+
+    .o-san-pham {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+
+    .o-san-pham img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ten-san-pham {
+        padding: 8px 4px;
+        font-size: 16px;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    .chu {
+        padding: 8px 12px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .bieu-tuong {
+        font-size: 16px;
+    }
+
+    /* Chi tiết sản phẩm */
+    .chi-tiet-san-pham {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 94%;
+        max-width: none;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    .khu-vuc-hinh {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        flex: auto;
+        gap: 8px;
+    }
+
+    .anh-nho {
+        width: 48px;
+        flex-shrink: 0;
+    }
+
+    .anh-nho img {
+        display: block;
+        width: 43px;
+        height: 43px;
+        margin-bottom: 7px;
+        object-fit: cover;
+    }
+
+    .anh-lon {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+    }
+
+    #anh-chinh {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .thong-tin-san-pham {
+        width: 100%;
+        flex: auto;
+        min-width: 0;
+    }
+
+    .nhan-san-pham {
+        font-size: 12px;
+    }
+
+    .thong-tin-san-pham h1 {
+        margin: 10px 0;
+        font-size: 25px;
+        overflow-wrap: anywhere;
+    }
+
+    .gia-san-pham {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 12px 0;
+    }
+
+    .gia-san-pham strong {
+        font-size: 22px;
+    }
+
+    .gia-san-pham span {
+        font-size: 11px;
+    }
+
+    .mo-ta-ngan {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .chon-so-luong {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 15px 0;
+    }
+
+    .chon-so-luong input {
+        width: 65px;
+        padding: 8px;
+    }
+
+    .nut-mua-hang {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 15px 0;
+    }
+
+    .nut-mua-hang button,
+    .nut-mua-hang a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .thong-tin-giao-hang {
+        margin: 15px 0;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .thong-tin-giao-hang small {
+        margin-left: 10px;
+    }
+
+    /* Mô tả sản phẩm */
+    .khu-vuc-mo-ta {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        gap: 18px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .mo-ta-san-pham,
+    .y-nghia {
+        width: 100%;
+        min-width: 0;
+        padding: 0 0 15px;
+        border-right: 0;
+    }
+
+    .mo-ta-san-pham {
+        border-bottom: 1px solid #6B2335;
+    }
+
+    .khu-vuc-mo-ta h2 {
+        font-size: 19px;
+    }
+
+    .khu-vuc-mo-ta p,
+    .khu-vuc-mo-ta li {
+        font-size: 15px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    /* Sản phẩm liên quan */
+    .san-pham-lien-quan {
+        width: 94%;
+        min-width: 0;
+        margin: 20px auto 35px;
+    }
+
+    .tieu-de-lien-quan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .tieu-de-lien-quan h2 {
+        flex: 1;
+        min-width: 0;
+        font-size: 20px;
+        line-height: 1.3;
+        overflow-wrap: break-word;
+    }
+
+    .tieu-de-lien-quan a {
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .san-pham-lien-quan .danh-sach-san-pham {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    /* Bộ sưu tập */
+    .bo-suu-tap {
+        width: 94%;
+        max-width: none;
+    }
+
+    .tieu-de-bo-suu-tap {
+        margin-bottom: 20px;
+    }
+
+    .tieu-de-bo-suu-tap h2 {
+        font-size: 24px;
+    }
+
+    .tieu-de-bo-suu-tap p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .danh-sach-bo-suu-tap {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .o-bo-suu-tap {
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .noi-dung-bo-suu-tap {
+        padding: 18px 12px;
+    }
+
+    .noi-dung-bo-suu-tap h3 {
+        font-size: 21px;
+    }
+
+    /* Trang Về chúng tôi */
+    .trang-bo-hoa {
+        width: 100%;
+    }
+
+    .tieu-de {
+        width: 92%;
+        margin: 0 auto 35px;
+        line-height: 1.7;
+    }
+
+    .tieu-de h1 {
+        font-size: 28px;
+        margin: 12px 0;
+    }
+
+    .tieu-de p,
+    .ket-thuc p {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .chu-nho {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .hoa-nho {
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    .cau-chuyen-brenna {
+        width: 92%;
+        margin: 25px auto;
+        padding: 18px 12px;
+    }
+
+    .cau-chuyen-brenna .chu-nho {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .cau-chuyen-brenna h2 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .cau-chuyen-brenna h3 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .cau-chuyen-brenna p {
+        margin: 12px 0;
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .cau-chuyen {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 92%;
+        max-width: none;
+        gap: 15px;
+        margin: 20px auto;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .cau-chuyen.doi {
+        flex-direction: column;
+    }
+
+    .hinh {
+        width: 100%;
+        min-width: 0;
+        flex: auto;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        padding: 5px;
+    }
+
+    .hinh img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .so {
+        top: 10px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 15px;
+    }
+
+    .noi-dung {
+        width: 100%;
+        min-width: 0;
+        flex: auto;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .nhan {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .noi-dung h2 {
+        font-size: 23px;
+        line-height: 1.4;
+        margin: 8px 0;
+    }
+
+    .ten-tieng-anh {
+        font-size: 14px;
+    }
+
+    .duong-vang {
+        margin: 14px 0;
+    }
+
+    .noi-dung > p:not(.ten-tieng-anh) {
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .noi-dung blockquote {
+        margin: 15px 0;
+        padding-left: 10px;
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    .nut {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+
+    .ket-thuc {
+        width: 92%;
+        max-width: none;
+        margin: 45px auto;
+        padding: 25px 12px;
+        line-height: 1.7;
+    }
+
+    .ket-thuc h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .ket-thuc p {
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
+    /* Giỏ hàng */
+    .gio-hang {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .dong-san-pham-gio {
+        align-items: flex-start;
+        gap: 9px;
+        padding: 12px 0;
+    }
+
+    .dong-san-pham-gio img {
+        width: 55px;
+        height: 65px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    .thong-tin-gio {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .thong-tin-gio b {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .thong-tin-gio p {
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .thong-tin-gio input {
+        width: 55px;
+        max-width: 100%;
+        padding: 6px;
+    }
+
+    .thong-tin-gio button {
+        margin: 7px 0 0;
+        padding: 6px 9px;
+        font-size: 13px;
+    }
+
+    .dong-tong-tien {
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 14px 0;
+    }
+
+    .dong-tong-tien strong,
+    .dong-tong-tien span {
+        font-size: 17px;
+    }
+
+    .thong-tin-dat-hang h2 {
+        font-size: 20px;
+    }
+
+    .don-hang-thanh-cong {
+        padding: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .mon-hang-da-dat {
+        gap: 8px;
+    }
+
+    .mon-hang-da-dat img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mon-hang-da-dat p {
+        font-size: 12px;
+    }
+
+    /* Liên hệ */
+    .khung-lien-he {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 92%;
+        max-width: none;
+        gap: 18px;
+        margin: 22px auto;
+    }
+
+    .thong-tin-lien-he,
+    .form-lien-he {
+        width: 100%;
+        min-width: 0;
+        flex: auto;
+        padding: 15px;
+        font-size: 15px;
+        overflow-wrap: break-word;
+    }
+
+    .thong-tin-lien-he h2,
+    .form-lien-he h2 {
+        font-size: 21px;
+    }
+
+    .dong-lien-he {
+        gap: 8px;
+        margin-top: 18px;
+    }
+
+    .dong-lien-he > span {
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+
+    .loi-nhan {
+        margin-top: 20px;
+        padding: 12px;
+    }
+
+    .form-lien-he input,
+    .form-lien-he select,
+    .form-lien-he textarea {
+        width: 100%;
+        min-width: 0;
+        font-size: 15px;
+    }
+
+    .nut-gui {
+        padding: 11px;
+        font-size: 16px;
+    }
+
+    /* Chân trang */
     footer {
-        padding: 18px 10px;
-        font-size: 13px !important;
+        width: 100%;
+        padding: 24px 12px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - ĐIỆN THOẠI NHỎ
+======================================== */
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 12px 7px;
+    }
+
+    #logo {
+        width: 48px;
+    }
+
+    .ten {
+        font-size: 14px;
+    }
+
+    nav {
+        height: 50px;
+        min-height: 50px;
+        gap: 18px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .khung-anh {
+        width: 96%;
+    }
+
+    .chu-tren-anh {
+        left: 4%;
+        width: 68%;
+    }
+
+    .chu-tren-anh h1 {
+        font-size: 17px;
+        margin: 6px 0;
+    }
+
+    .chu-tren-anh span {
+        font-size: 11px;
+    }
+
+    .chu-tren-anh button {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+
+    .loi-moi p {
+        font-size: 14px;
+    }
+
+    /* Sản phẩm vẫn giữ hai cột */
+    .khung-san-pham > .danh-sach-san-pham,
+    .danh-sach-san-pham,
+    .san-pham-lien-quan .danh-sach-san-pham {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .ten-san-pham {
+        padding: 7px 3px;
+        font-size: 14px;
     }
 
     .san-pham {
         font-size: 14px;
     }
 
-    .ten-san-pham {
-        font-size: 14px !important;
-        padding: 6px 3px;
+    .muc-danh-muc {
+        padding: 5px 2px;
     }
 
     .muc-danh-muc span {
-        font-size: 17px !important;
+        font-size: 17px;
     }
 
     .muc-danh-muc b {
-        font-size: 14px !important;
+        font-size: 13px;
     }
 
     .muc-danh-muc p {
-        font-size: 12px !important;
+        font-size: 12px;
     }
 
-    .chu {
-        font-size: 14px !important;
-        padding: 6px 8px;
+    /* Chi tiết sản phẩm */
+    .anh-nho {
+        width: 42px;
     }
 
-    .loi-moi {
-        padding: 14px 8px;
-    }
-
-    .loi-moi p {
-        font-size: 14px !important;
-        padding: 6px;
-    }
-
-    .nut-xem {
-        font-size: 12px !important;
-        padding: 7px 12px;
+    .anh-nho img {
+        width: 38px;
+        height: 38px;
     }
 
     .thong-tin-san-pham h1 {
-        font-size: 21px !important;
+        font-size: 22px;
     }
 
     .gia-san-pham strong {
-        font-size: 18px !important;
+        font-size: 20px;
     }
 
-    .mo-ta-ngan,
+    .mo-ta-ngan {
+        font-size: 15px;
+    }
+
+    .nut-mua-hang button,
+    .nut-mua-hang a {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
     .thong-tin-giao-hang {
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
-    .khu-vuc-mo-ta h2 {
-        font-size: 17px !important;
+    /* Sản phẩm liên quan */
+    .tieu-de-lien-quan {
+        gap: 5px;
     }
 
-    .khu-vuc-mo-ta p,
-    .khu-vuc-mo-ta li {
-        font-size: 14px !important;
+    .tieu-de-lien-quan h2 {
+        font-size: 18px;
     }
 
-    .tieu-de-bo-suu-tap h2 {
-        font-size: 21px !important;
+    .tieu-de-lien-quan a {
+        font-size: 12px;
     }
 
-    .tieu-de-bo-suu-tap p {
-        font-size: 14px !important;
-    }
-
-    .noi-dung-bo-suu-tap h3 {
-        font-size: 17px !important;
-    }
-
+    /* Về chúng tôi */
     .cau-chuyen-brenna {
-        padding: 16px 10px;
+        padding: 15px 10px;
     }
 
     .cau-chuyen-brenna .chu-nho {
-        font-size: 13px !important;
+        font-size: 12px;
         letter-spacing: 1px;
     }
 
     .cau-chuyen-brenna h2 {
-        font-size: 20px !important;
+        font-size: 21px;
+    }
+
+    .cau-chuyen-brenna h3 {
+        font-size: 16px;
     }
 
     .cau-chuyen-brenna p {
-        font-size: 14px !important;
-        line-height: 1.6;
+        font-size: 14px;
     }
 
-    .noi-dung {
-        font-size: 14px !important;
+    .cau-chuyen {
+        padding: 9px;
     }
 
     .noi-dung h2 {
-        font-size: 21px !important;
+        font-size: 21px;
     }
 
     .noi-dung > p:not(.ten-tieng-anh),
     .noi-dung blockquote {
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
     .ket-thuc h2 {
-        font-size: 21px !important;
+        font-size: 21px;
     }
 
-    .ket-thuc p {
-        font-size: 14px !important;
+    .ket-thuc p,
+    .tieu-de p {
+        font-size: 14px;
+    }
+
+    /* Giỏ hàng */
+    .dong-san-pham-gio img {
+        width: 48px;
+        height: 58px;
     }
 
     .thong-tin-gio p {
-        font-size: 13px !important;
+        font-size: 13px;
     }
 
     .dong-tong-tien strong,
     .dong-tong-tien span {
-        font-size: 15px !important;
+        font-size: 15px;
     }
 
+    /* Liên hệ */
     .thong-tin-lien-he,
     .form-lien-he {
-        font-size: 14px !important;
+        padding: 12px;
     }
 
     .thong-tin-lien-he h2,
     .form-lien-he h2 {
-        font-size: 19px !important;
+        font-size: 19px;
     }
 
-    .form-lien-he input,
-    .form-lien-he select,
-    .form-lien-he textarea {
-        font-size: 16px !important;
-        max-width: 100%;
-    }
-
-    .nut-gui {
-        font-size: 14px !important;
-    }
-
-    img {
-        max-width: 100%;
+    footer {
+        padding: 20px 8px;
+        font-size: 14px;
     }
 }
 
