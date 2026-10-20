@@ -1146,140 +1146,102 @@ footer {
 }
 
 
-/* ========================================
-   RESPONSIVE - ĐIỆN THOẠI
-   Máy tính giữ nguyên giao diện và font cũ
-======================================== */
+/* ======================================== */
+/* GIAO DIỆN DÀNH CHO ĐIỆN THOẠI */
+/* Máy tính giữ nguyên giao diện hiện tại   */
+/* Điện thoại sử dụng Times New Roman       */
+/* ======================================== */
+
 @media screen and (max-width: 768px) {
 
-    /* Font chữ: toàn bộ nội dung dùng Times New Roman */
+    /* Chỉ sử dụng Times New Roman trên điện thoại */
+    html,
     body,
-    body *,
-    body *::before,
-    body *::after {
+    body * {
         font-family: "Times New Roman", Times, serif !important;
     }
 
-    html {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
+    /* Điều chỉnh chiều rộng trang */
+    html,
     body {
         width: 100%;
         min-width: 0;
+        max-width: 100%;
         overflow-x: hidden;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
     }
 
-    /* Đầu trang */
+    /* Phần đầu trang */
     header {
-        width: 100%;
+        max-width: 100%;
         padding: 15px 10px;
-        background-size: cover;
-        background-position: center;
-        gap: 8px;
+        flex-wrap: wrap;
     }
 
     #logo {
-        width: 58px;
-        max-width: 20%;
+        width: 60px;
+        max-width: 100%;
         height: auto;
         flex-shrink: 0;
     }
 
     .ten {
-        min-width: 0;
         font-size: 16px;
         overflow-wrap: anywhere;
     }
 
-    /* Menu nằm ngang, có thể vuốt để xem hết */
-    .dau-trang nav,
-    .dau-trang.nav-dinh nav {
-        position: relative;
-        top: auto;
-        left: auto;
+    /* Thanh menu */
+    nav,
+    .dau-trang nav {
         width: 100%;
-    }
-
-    nav {
-        width: 100%;
+        max-width: 100%;
         min-width: 0;
-        height: 55px;
-        min-height: 55px;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 22px;
-        padding: 0 12px;
+        height: auto;
+        min-height: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+        padding: 12px 8px;
         font-size: 15px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
     }
 
-    nav::-webkit-scrollbar {
-        display: none;
-    }
-
-    nav a,
-    nav .thads {
-        flex: 0 0 auto;
-        white-space: nowrap;
-    }
-
-    nav a.active,
-    nav a:hover {
-        transform: none;
-    }
-
-    nav a.active .thanh-ngang {
-        width: 100%;
+    nav a {
         max-width: 100%;
-    }
-
-    .thanh-ngang {
-        width: 80%;
-        max-width: 100%;
-    }
-
-    .traitim {
-        margin: 0 6px;
-        font-size: 14px;
+        overflow-wrap: anywhere;
     }
 
     .dscon {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        transform: none;
-        width: 210px;
-        max-width: 85vw;
-        z-index: 1100;
+        width: 190px;
+        max-width: 90vw;
     }
 
     .dscon li a {
-        padding: 12px 15px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
-    /* Hình ảnh trang chủ */
+    /* Ba hình ảnh trang chủ */
+    .bo-anh {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
     .khung-anh {
         display: block;
         width: 94%;
+        max-width: 100%;
         margin: 12px auto;
-        border-radius: 10px;
     }
 
     .khung-anh img {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
     }
 
     .chu-tren-anh {
-        left: 5%;
-        width: 65%;
+        width: 75%;
+        max-width: 100%;
     }
 
     .chu-tren-anh span {
@@ -1287,50 +1249,51 @@ footer {
     }
 
     .chu-tren-anh h1 {
-        font-size: 20px;
-        line-height: 1.2;
-        margin: 8px 0;
+        font-size: 21px;
+        overflow-wrap: anywhere;
     }
 
     .chu-tren-anh button {
-        margin-top: 6px;
-        padding: 7px 11px;
+        margin-top: 5px;
+        padding: 7px 10px;
         font-size: 13px;
     }
 
-    /* Lời mời / banner */
-    .loi-moi {
-        width: 94%;
-        margin: 25px auto;
-        padding: 20px 12px;
-        background-position: center;
-        background-size: cover;
+    /* Danh sách sản phẩm */
+    .danh-sach-san-pham {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 25px;
+        padding: 0 10px;
     }
 
-    .loi-moi p {
-        margin: 10px 0;
-        padding: 9px;
-        font-size: 16px;
-        line-height: 1.5;
+    .san-pham {
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
     }
 
-    .nut-xem {
-        padding: 9px 16px;
-        font-size: 14px;
+    .san-pham img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
-    /* Danh mục */
-    .cac-muc {
-        flex-wrap: wrap;
+    .ten-san-pham {
+        padding: 8px 4px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
     }
 
+    /* Các danh mục */
     .muc-danh-muc {
-        min-width: 33.333%;
-        padding: 7px 4px;
+        max-width: 100%;
     }
 
     .muc-danh-muc span {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .muc-danh-muc b {
@@ -1341,378 +1304,181 @@ footer {
         font-size: 13px;
     }
 
-    /* Danh sách sản phẩm */
+    /* Khung sản phẩm và thanh bên */
     .khung-san-pham {
-        display: flex;
+        width: 95%;
+        max-width: 100%;
+        min-width: 0;
         flex-direction: column;
-        align-items: stretch;
-        width: 94%;
-        max-width: none;
-        gap: 15px;
-        margin: 15px auto;
+        gap: 10px;
     }
 
     .thanh-ben {
         width: 100%;
         min-width: 0;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
-    .hop-ben {
-        padding: 14px;
-    }
-
-    .khung-san-pham > .danh-sach-san-pham,
-    .danh-sach-san-pham {
-        display: grid;
-        width: 100%;
-        max-width: none;
-        min-width: 0;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        margin: 20px auto;
-        padding: 0;
-    }
-
-    .san-pham {
+    .khung-san-pham > .danh-sach-san-pham {
         width: 100%;
         min-width: 0;
-        font-size: 16px;
-        border-width: 1px;
+        margin-top: 20px;
     }
 
-    .san-pham:hover {
-        transform: none;
+    /* Banner lời mời */
+    .loi-moi {
+        width: 94%;
+        max-width: 100%;
+        margin: 25px auto;
+        padding: 20px 10px;
+        background-size: cover;
+        background-position: center;
     }
 
-    .o-san-pham {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-    }
-
-    .o-san-pham img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .ten-san-pham {
-        padding: 8px 4px;
-        font-size: 16px;
-        line-height: 1.3;
+    .loi-moi p {
+        font-size: 17px;
+        padding: 8px;
         overflow-wrap: anywhere;
-    }
-
-    .chu {
-        padding: 8px 12px;
-        font-size: 15px;
-        overflow-wrap: anywhere;
-    }
-
-    .bieu-tuong {
-        font-size: 16px;
     }
 
     /* Chi tiết sản phẩm */
     .chi-tiet-san-pham {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
         width: 94%;
-        max-width: none;
+        max-width: 100%;
+        min-width: 0;
+        flex-direction: column;
         gap: 20px;
-        margin: 20px auto;
     }
 
     .khu-vuc-hinh {
-        display: flex;
-        align-items: flex-start;
         width: 100%;
-        flex: auto;
-        gap: 8px;
+        min-width: 0;
     }
 
     .anh-nho {
-        width: 48px;
-        flex-shrink: 0;
+        width: 55px;
+        max-width: 100%;
     }
 
     .anh-nho img {
-        display: block;
-        width: 43px;
-        height: 43px;
-        margin-bottom: 7px;
+        width: 50px;
+        height: 50px;
         object-fit: cover;
     }
 
     .anh-lon {
-        flex: 1;
-        min-width: 0;
-        width: auto;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         aspect-ratio: 4 / 5;
-        overflow: hidden;
-    }
-
-    #anh-chinh {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .thong-tin-san-pham {
         width: 100%;
-        flex: auto;
         min-width: 0;
-    }
-
-    .nhan-san-pham {
-        font-size: 12px;
-    }
-
-    .thong-tin-san-pham h1 {
-        margin: 10px 0;
-        font-size: 25px;
         overflow-wrap: anywhere;
     }
 
-    .gia-san-pham {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 12px 0;
+    .thong-tin-san-pham h1 {
+        font-size: 25px;
     }
 
     .gia-san-pham strong {
         font-size: 22px;
     }
 
-    .gia-san-pham span {
-        font-size: 11px;
-    }
-
-    .mo-ta-ngan {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    .chon-so-luong {
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 15px 0;
-    }
-
-    .chon-so-luong input {
-        width: 65px;
-        padding: 8px;
-    }
-
-    .nut-mua-hang {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 15px 0;
-    }
-
-    .nut-mua-hang button,
-    .nut-mua-hang a {
-        padding: 10px 12px;
-        font-size: 13px;
-    }
-
+    .mo-ta-ngan,
     .thong-tin-giao-hang {
-        margin: 15px 0;
-        padding: 10px;
         font-size: 16px;
         line-height: 1.6;
     }
 
-    .thong-tin-giao-hang small {
-        margin-left: 10px;
-    }
-
-    /* Mô tả sản phẩm */
+    /* Mô tả và ý nghĩa sản phẩm */
     .khu-vuc-mo-ta {
-        display: flex;
-        flex-direction: column;
         width: 94%;
-        gap: 18px;
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    .mo-ta-san-pham,
-    .y-nghia {
-        width: 100%;
+        max-width: 100%;
         min-width: 0;
-        padding: 0 0 15px;
-        border-right: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
     }
 
     .mo-ta-san-pham {
+        min-width: 0;
+        padding-right: 0;
+        border-right: none;
         border-bottom: 1px solid #6B2335;
+        padding-bottom: 15px;
     }
 
     .khu-vuc-mo-ta h2 {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .khu-vuc-mo-ta p,
     .khu-vuc-mo-ta li {
-        font-size: 15px;
-        line-height: 1.7;
-        overflow-wrap: break-word;
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
     }
 
     /* Sản phẩm liên quan */
-    .san-pham-lien-quan {
-        width: 94%;
-        min-width: 0;
-        margin: 20px auto 35px;
-    }
-
-    .tieu-de-lien-quan {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 8px;
-        width: 100%;
-        font-size: 15px;
-    }
-
-    .tieu-de-lien-quan h2 {
-        flex: 1;
-        min-width: 0;
-        font-size: 20px;
-        line-height: 1.3;
-        overflow-wrap: break-word;
-    }
-
-    .tieu-de-lien-quan a {
-        flex-shrink: 0;
-        white-space: nowrap;
-        font-size: 13px;
-    }
-
     .san-pham-lien-quan .danh-sach-san-pham {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
-        margin-top: 15px;
     }
 
     /* Bộ sưu tập */
     .bo-suu-tap {
         width: 94%;
-        max-width: none;
-    }
-
-    .tieu-de-bo-suu-tap {
-        margin-bottom: 20px;
+        max-width: 100%;
     }
 
     .tieu-de-bo-suu-tap h2 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .tieu-de-bo-suu-tap p {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 17px;
     }
 
     .danh-sach-bo-suu-tap {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 18px;
     }
 
     .o-bo-suu-tap {
-        height: auto;
-        aspect-ratio: 4 / 5;
-    }
-
-    .noi-dung-bo-suu-tap {
-        padding: 18px 12px;
-    }
-
-    .noi-dung-bo-suu-tap h3 {
-        font-size: 21px;
-    }
-
-    /* Trang Về chúng tôi */
-    .trang-bo-hoa {
         width: 100%;
+        max-width: 100%;
+        height: 350px;
     }
 
-    .tieu-de {
-        width: 92%;
-        margin: 0 auto 35px;
-        line-height: 1.7;
-    }
-
-    .tieu-de h1 {
-        font-size: 28px;
-        margin: 12px 0;
-    }
-
-    .tieu-de p,
-    .ket-thuc p {
-        width: 100%;
-        padding: 10px 12px;
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .chu-nho {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-
-    .hoa-nho {
-        font-size: 18px;
-        margin: 12px 0;
-    }
-
+    /* Câu chuyện Brenna */
     .cau-chuyen-brenna {
-        width: 92%;
-        margin: 25px auto;
-        padding: 18px 12px;
+        max-width: 100%;
+        margin: 25px 10px;
+        padding: 22px 15px;
     }
 
     .cau-chuyen-brenna .chu-nho {
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 1px;
     }
 
-    .cau-chuyen-brenna h2 {
-        font-size: 23px;
-        line-height: 1.4;
-    }
-
-    .cau-chuyen-brenna h3 {
-        font-size: 17px;
-        line-height: 1.5;
-    }
-
     .cau-chuyen-brenna p {
-        margin: 12px 0;
-        font-size: 15px;
-        line-height: 1.7;
-        text-align: justify;
-        overflow-wrap: break-word;
+        font-size: 17px;
+        line-height: 1.6;
     }
 
     .cau-chuyen {
-        display: flex;
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
         flex-direction: column;
-        align-items: stretch;
-        width: 92%;
-        max-width: none;
-        gap: 15px;
+        gap: 20px;
         margin: 20px auto;
-        padding: 12px;
-        border-radius: 12px;
+        padding: 15px;
     }
 
     .cau-chuyen.doi {
@@ -1721,145 +1487,58 @@ footer {
 
     .hinh {
         width: 100%;
+        max-width: 100%;
         min-width: 0;
-        flex: auto;
-        height: auto;
-        aspect-ratio: 4 / 3;
-        padding: 5px;
-    }
-
-    .hinh img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .so {
-        top: 10px;
-        left: 10px;
-        padding: 6px 10px;
-        font-size: 15px;
+        flex: none;
+        height: 320px;
     }
 
     .noi-dung {
         width: 100%;
+        max-width: 100%;
         min-width: 0;
-        flex: auto;
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    .nhan {
-        font-size: 10px;
-        letter-spacing: 1px;
+        flex: none;
+        font-size: 16px;
+        overflow-wrap: anywhere;
     }
 
     .noi-dung h2 {
-        font-size: 23px;
-        line-height: 1.4;
-        margin: 8px 0;
+        font-size: 26px;
     }
 
-    .ten-tieng-anh {
-        font-size: 14px;
-    }
-
-    .duong-vang {
-        margin: 14px 0;
-    }
-
-    .noi-dung > p:not(.ten-tieng-anh) {
-        margin-bottom: 12px;
-        font-size: 15px;
-        line-height: 1.7;
-        text-align: justify;
-        overflow-wrap: break-word;
-    }
-
+    .noi-dung > p:not(.ten-tieng-anh),
     .noi-dung blockquote {
-        margin: 15px 0;
-        padding-left: 10px;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.7;
-        text-align: justify;
-        overflow-wrap: break-word;
-    }
-
-    .nut {
-        padding: 9px 13px;
-        font-size: 14px;
     }
 
     .ket-thuc {
-        width: 92%;
-        max-width: none;
-        margin: 45px auto;
-        padding: 25px 12px;
-        line-height: 1.7;
-    }
-
-    .ket-thuc h2 {
-        font-size: 24px;
-        line-height: 1.4;
-    }
-
-    .ket-thuc p {
-        text-align: justify;
-        overflow-wrap: break-word;
+        max-width: 100%;
+        margin: 40px 15px;
+        padding: 25px 10px;
     }
 
     /* Giỏ hàng */
-    .gio-hang {
-        width: 100%;
-        min-width: 0;
-    }
-
     .dong-san-pham-gio {
-        align-items: flex-start;
-        gap: 9px;
-        padding: 12px 0;
+        min-width: 0;
+        gap: 8px;
+        flex-wrap: wrap;
     }
 
     .dong-san-pham-gio img {
-        width: 55px;
+        width: 60px;
+        max-width: 100%;
         height: 65px;
-        flex-shrink: 0;
         object-fit: cover;
     }
 
     .thong-tin-gio {
-        flex: 1;
         min-width: 0;
         overflow-wrap: anywhere;
     }
 
-    .thong-tin-gio b {
-        font-size: 15px;
-        line-height: 1.4;
-    }
-
     .thong-tin-gio p {
         font-size: 14px;
-        line-height: 1.5;
-        overflow-wrap: anywhere;
-    }
-
-    .thong-tin-gio input {
-        width: 55px;
-        max-width: 100%;
-        padding: 6px;
-    }
-
-    .thong-tin-gio button {
-        margin: 7px 0 0;
-        padding: 6px 9px;
-        font-size: 13px;
-    }
-
-    .dong-tong-tien {
-        gap: 8px;
-        flex-wrap: wrap;
-        padding: 14px 0;
     }
 
     .dong-tong-tien strong,
@@ -1867,114 +1546,64 @@ footer {
         font-size: 17px;
     }
 
-    .thong-tin-dat-hang h2 {
-        font-size: 20px;
-    }
-
-    .don-hang-thanh-cong {
-        padding: 10px;
-        overflow-wrap: anywhere;
-    }
-
-    .mon-hang-da-dat {
-        gap: 8px;
-    }
-
-    .mon-hang-da-dat img {
-        width: 45px;
-        height: 45px;
-    }
-
-    .mon-hang-da-dat p {
-        font-size: 12px;
-    }
-
-    /* Liên hệ */
+    /* Trang liên hệ */
     .khung-lien-he {
-        display: flex;
+        width: 94%;
+        max-width: 100%;
+        min-width: 0;
         flex-direction: column;
-        align-items: stretch;
-        width: 92%;
-        max-width: none;
-        gap: 18px;
-        margin: 22px auto;
+        gap: 20px;
     }
 
     .thong-tin-lien-he,
     .form-lien-he {
         width: 100%;
+        max-width: 100%;
         min-width: 0;
-        flex: auto;
-        padding: 15px;
         font-size: 15px;
-        overflow-wrap: break-word;
-    }
-
-    .thong-tin-lien-he h2,
-    .form-lien-he h2 {
-        font-size: 21px;
+        padding: 18px;
     }
 
     .dong-lien-he {
         gap: 8px;
-        margin-top: 18px;
-    }
-
-    .dong-lien-he > span {
-        font-size: 20px;
-        flex-shrink: 0;
-    }
-
-    .loi-nhan {
-        margin-top: 20px;
-        padding: 12px;
+        flex-wrap: wrap;
     }
 
     .form-lien-he input,
-    .form-lien-he select,
-    .form-lien-he textarea {
+    .form-lien-he textarea,
+    .form-lien-he select {
         width: 100%;
-        min-width: 0;
-        font-size: 15px;
-    }
-
-    .nut-gui {
-        padding: 11px;
-        font-size: 16px;
+        max-width: 100%;
     }
 
     /* Chân trang */
     footer {
         width: 100%;
-        padding: 24px 12px;
-        font-size: 16px;
-        line-height: 1.6;
+        max-width: 100%;
+        padding: 25px 12px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Hình ảnh không tràn khỏi màn hình */
+    img,
+    video,
+    iframe {
+        max-width: 100%;
     }
 }
 
-/* ========================================
-   RESPONSIVE - ĐIỆN THOẠI NHỎ
-======================================== */
+/* ======================================== */
+/* ĐIỆN THOẠI MÀN HÌNH NHỎ: 480px TRỞ XUỐNG */
+/* ======================================== */
+
 @media screen and (max-width: 480px) {
 
-    header {
-        padding: 12px 7px;
-    }
-
-    #logo {
-        width: 48px;
-    }
-
-    .ten {
-        font-size: 14px;
-    }
-
-    nav {
-        height: 50px;
-        min-height: 50px;
-        gap: 18px;
-        padding: 0 10px;
-        font-size: 14px;
+    nav,
+    .dau-trang nav {
+        gap: 9px 12px;
+        padding: 10px 5px;
+        font-size: 13px;
     }
 
     .khung-anh {
@@ -1982,179 +1611,39 @@ footer {
     }
 
     .chu-tren-anh {
-        left: 4%;
-        width: 68%;
+        width: 82%;
     }
 
     .chu-tren-anh h1 {
-        font-size: 17px;
-        margin: 6px 0;
-    }
-
-    .chu-tren-anh span {
-        font-size: 11px;
-    }
-
-    .chu-tren-anh button {
-        padding: 6px 9px;
-        font-size: 12px;
-    }
-
-    .loi-moi p {
-        font-size: 14px;
-    }
-
-    /* Sản phẩm vẫn giữ hai cột */
-    .khung-san-pham > .danh-sach-san-pham,
-    .danh-sach-san-pham,
-    .san-pham-lien-quan .danh-sach-san-pham {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 8px;
-    }
-
-    .ten-san-pham {
-        padding: 7px 3px;
-        font-size: 14px;
-    }
-
-    .san-pham {
-        font-size: 14px;
-    }
-
-    .muc-danh-muc {
-        padding: 5px 2px;
-    }
-
-    .muc-danh-muc span {
-        font-size: 17px;
-    }
-
-    .muc-danh-muc b {
-        font-size: 13px;
-    }
-
-    .muc-danh-muc p {
-        font-size: 12px;
-    }
-
-    /* Chi tiết sản phẩm */
-    .anh-nho {
-        width: 42px;
-    }
-
-    .anh-nho img {
-        width: 38px;
-        height: 38px;
-    }
-
-    .thong-tin-san-pham h1 {
-        font-size: 22px;
-    }
-
-    .gia-san-pham strong {
-        font-size: 20px;
-    }
-
-    .mo-ta-ngan {
-        font-size: 15px;
-    }
-
-    .nut-mua-hang button,
-    .nut-mua-hang a {
-        padding: 9px 10px;
-        font-size: 12px;
-    }
-
-    .thong-tin-giao-hang {
-        font-size: 14px;
-    }
-
-    /* Sản phẩm liên quan */
-    .tieu-de-lien-quan {
-        gap: 5px;
-    }
-
-    .tieu-de-lien-quan h2 {
         font-size: 18px;
     }
 
-    .tieu-de-lien-quan a {
+    .chu-tren-anh span {
         font-size: 12px;
     }
 
-    /* Về chúng tôi */
-    .cau-chuyen-brenna {
-        padding: 15px 10px;
+    .danh-sach-san-pham {
+        gap: 8px;
+        padding: 0 8px;
     }
 
-    .cau-chuyen-brenna .chu-nho {
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    .cau-chuyen-brenna h2 {
-        font-size: 21px;
-    }
-
-    .cau-chuyen-brenna h3 {
-        font-size: 16px;
-    }
-
-    .cau-chuyen-brenna p {
+    .ten-san-pham {
         font-size: 14px;
     }
 
-    .cau-chuyen {
-        padding: 9px;
+    .hinh {
+        height: 280px;
     }
 
     .noi-dung h2 {
-        font-size: 21px;
+        font-size: 23px;
     }
 
-    .noi-dung > p:not(.ten-tieng-anh),
-    .noi-dung blockquote {
-        font-size: 14px;
+    .thong-tin-san-pham h1 {
+        font-size: 23px;
     }
 
-    .ket-thuc h2 {
-        font-size: 21px;
-    }
-
-    .ket-thuc p,
-    .tieu-de p {
-        font-size: 14px;
-    }
-
-    /* Giỏ hàng */
-    .dong-san-pham-gio img {
-        width: 48px;
-        height: 58px;
-    }
-
-    .thong-tin-gio p {
-        font-size: 13px;
-    }
-
-    .dong-tong-tien strong,
-    .dong-tong-tien span {
-        font-size: 15px;
-    }
-
-    /* Liên hệ */
-    .thong-tin-lien-he,
-    .form-lien-he {
-        padding: 12px;
-    }
-
-    .thong-tin-lien-he h2,
-    .form-lien-he h2 {
-        font-size: 19px;
-    }
-
-    footer {
-        padding: 20px 8px;
-        font-size: 14px;
+    .o-bo-suu-tap {
+        height: 300px;
     }
 }
-
