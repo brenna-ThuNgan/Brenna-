@@ -1144,3 +1144,8 @@ footer {
     color: #6B2335;
     line-height: 1.6;
 }
+@media (max-width: 768px) {
+    * {
+        font-family: "Times New Roman", serif !important;
+    }
+}
