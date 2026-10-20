@@ -1205,7 +1205,7 @@ footer {
         padding: 0 12px;
         font-size: 15px;
         overflow-x: auto;
-        overflow-y: hidden;
+        overflow-y: visible;
         white-space: nowrap;
         scrollbar-width: none;
         -webkit-overflow-scrolling: touch;
@@ -1241,14 +1241,36 @@ footer {
         font-size: 14px;
     }
 
+    
+    .dau-trang {
+        position: relative;
+        z-index: 1000;
+        overflow: visible !important;
+    }
+
+    .dau-trang nav {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .thads {
+        position: static;
+    }
+
     .dscon {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        transform: none;
+        position: fixed !important;
+        top: 125px;
+        left: 14px;
+        transform: none !important;
         width: 210px;
         max-width: 85vw;
-        z-index: 1100;
+        z-index: 99999 !important;
+        display: none;
+    }
+
+    .thads:hover .dscon,
+    .thads:focus-within .dscon {
+        display: block;
     }
 
     .dscon li a {
@@ -1924,7 +1946,6 @@ footer {
         font-size: 16px;
     }
 
-    /* Chân trang */
     footer {
         width: 100%;
         padding: 24px 12px;
@@ -2129,7 +2150,5 @@ footer {
         font-size: 14px;
     }
 }
-
-
 
 
