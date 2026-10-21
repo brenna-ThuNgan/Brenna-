@@ -1948,10 +1948,8 @@ footer {
 
     footer {
         width: 100%;
-        padding: 22px 10px;
         font-size: 14px;
         line-height: 1.6;
-        box-sizing: border-box;
     }
 }
 
