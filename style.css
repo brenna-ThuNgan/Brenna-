@@ -769,6 +769,9 @@ footer {
     border-radius: 20px;
     color: #FFD700;
 }
+.cau-chuyen p {
+    text-align: justify;
+}
 .cau-chuyen.doi {
     flex-direction: row-reverse;
 }
