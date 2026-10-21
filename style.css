@@ -1951,7 +1951,7 @@ footer {
 
  footer {
         width: 100%;
-        padding: 22px 5px;
+        padding: 20px 5px;
         font-size: 10px;
         line-height: 1.6;
         box-sizing: border-box;
@@ -2147,10 +2147,6 @@ footer {
     .thong-tin-lien-he h2,
     .form-lien-he h2 {
         font-size: 19px;
-    }
-
-    footer {
-        font-size: 12px;
     }
 }
 
